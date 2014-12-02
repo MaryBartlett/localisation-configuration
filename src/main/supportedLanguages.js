@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
     'default': {
-        translations: require('./translations/en.json'),
+        translations: require('./translations/en.js'),
         dateFormat: {
             defaultFormat: "%-d %B %Y",
             shortFormat: "%d/%m/%Y",
@@ -21,13 +21,13 @@ module.exports = {
     'fr': {
         territoryOverrides: {
             'ca': {
-                translations: require('./translations/ca-fr.json'),
+                translations: require('./translations/ca-fr.js')
             }
         },
-        translations: require('./translations/fr.json')
+        translations: require('./translations/fr.js')
     },
     'en': {
-        translations: require('./translations/en.json')
+        translations: require('./translations/en.js'),
         dateFormat: {
             defaultFormat: "%-d %B %Y",
             shortFormat: "%d/%m/%Y",
@@ -45,4 +45,3 @@ module.exports = {
         }
     }
 };
-

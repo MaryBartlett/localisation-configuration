@@ -3,7 +3,7 @@ var loadNpmTasks,
     registerTasks,
     registerReleaseTasks;
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
     grunt.initConfig({
         branch: 'master',
@@ -33,7 +33,7 @@ registerTasks = function (grunt) {
      */
     grunt.registerTask('process_js', [
         'jshint',
-        // 'jscs',
+        'jscs',
         'webpack',
         'jasmine:client'
     ]);
@@ -65,7 +65,7 @@ registerReleaseTasks = function (grunt) {
 
 loadNpmTasks = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-jscs');    
+    grunt.loadNpmTasks('grunt-jscs');
     grunt.loadNpmTasks('grunt-webpack');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-jasmine');

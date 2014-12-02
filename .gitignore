@@ -1,0 +1,9 @@
+node_modules
+npm-debug.log
+info.log
+.grunt
+.idea
+
+# Don't push the output of the JS compilation to source
+target
+documentation

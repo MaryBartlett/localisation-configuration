@@ -1,4 +1,4 @@
-{
+module.exports = {
     "helloWorld": "hello world!",
     "date": {
         "day_names": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "iday", "Saturday"],
@@ -7,4 +7,4 @@
         "abbr_month_names": [null, "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"],
         "meridian": ["am", "pm"]
     }
-}
+};

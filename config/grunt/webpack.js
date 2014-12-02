@@ -6,7 +6,7 @@ module.exports = {
         entry: "./index.js",
         output: {
             path: "./target",
-            filename: "localisation.js"
+            filename: "localisation-configuration.js"
         },
         plugins: [
             new RewirePlugin()
