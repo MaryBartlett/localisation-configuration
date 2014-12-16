@@ -50,5 +50,10 @@ module.exports = {
         currencyFormat: "%n %u",
         currencySymbol: "€",
         territoryDefaultLanguage: "pt"
+    },
+    'fi': {
+        currencyFormat: "%n %u",
+        currencySymbol: "€",
+        territoryDefaultLanguage: "fi"
     }
 };

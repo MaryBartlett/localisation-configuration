@@ -94,5 +94,23 @@ module.exports = {
             shortFormat: "%H:%M",
             longFormat: "%H:%M"
         }
+    },
+    'fi': {
+        translations: require('./translations/fi.js'),
+        dateFormat: {
+            defaultFormat: "%-d %B %Y",
+            shortFormat: "%d/%m/%Y",
+            longFormat: "%-d %B %Y"
+        },
+        dateTimeFormat: {
+            defaultFormat: "%A, %d %B %Y, %H:%M h",
+            shortFormat: "%d/%m, %H:%M h",
+            longFormat: "%A, %d %B %Y, %H:%M h"
+        },
+        timeFormat: {
+            defaultFormat: "%H:%M",
+            shortFormat: "%H:%M",
+            longFormat: "%H:%M"
+        }
     }
 };
