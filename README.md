@@ -22,7 +22,7 @@ The supportedTerritories[territory] object contains the territory specific infor
  - numberSeparator
  - numberDelimiter
  - territoryDefaultLanguage
-and any language overrides 
+ - any language overrides 
 
 
 The supportedLanguages[language] object contains the language specific information:
@@ -31,7 +31,7 @@ The supportedLanguages[language] object contains the language specific informati
  - dateTranslations
  - dateFormat
  - timeFormat
-and any territory overrides 
+ - any territory overrides 
 
 
 ## Grunt
