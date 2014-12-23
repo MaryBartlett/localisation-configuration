@@ -35,12 +35,20 @@ registerTasks = function (grunt) {
         'jshint',
         'jscs',
         'webpack',
-        'jasmine:client'
+        'jasmine'
     ]);
 
-    // ci task to give a uniform entry point for jenkins - might not be needed?
+    // ci task to give a uniform entry point for jenkins
     grunt.registerTask('ci', [
         'process_js'
+    ]);
+
+
+    grunt.registerTask('test', [
+        'jshint',
+        'jscs',
+        'webpack',
+        'jasmine'
     ]);
 
 
@@ -60,7 +68,6 @@ registerTasks = function (grunt) {
 
 registerReleaseTasks = function (grunt) {
     require('./grunt-tasks/release')(grunt);
-    require('./grunt-tasks/jenkins')(grunt);
 };
 
 loadNpmTasks = function (grunt) {
