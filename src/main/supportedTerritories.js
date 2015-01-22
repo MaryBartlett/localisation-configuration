@@ -186,10 +186,10 @@ module.exports = {
     'jp': {
         currencyFormat: "%u%n",
         currencySymbol: "￥",
-        //currencyPrecision: 2,
+        // currencyPrecision: 2,
         currencySeparator: "",
         currencyDelimiter: ",",
-        //numberPrecision: 2,
+        // numberPrecision: 2,
         numberSeparator: ".",
         numberDelimiter: ",",
         territoryDefaultLanguage: "ja"
@@ -197,10 +197,10 @@ module.exports = {
     'kr': {
         currencyFormat: "%n%u",
         currencySymbol: "€",
-        //currencyPrecision: 2,
+        // currencyPrecision: 2,
         currencySeparator: "",
         currencyDelimiter: ",",
-        //numberPrecision: 2,
+        // numberPrecision: 2,
         numberSeparator: ".",
         numberDelimiter: ",",
         territoryDefaultLanguage: "ko"
