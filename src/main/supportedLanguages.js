@@ -40,12 +40,12 @@ module.exports = {
         },
         dateFormat: {
             defaultFormat: "%-d %B %Y",
-            shortFormat: "%-d/%-m/%Y",
+            shortFormat: "%-d/%m/%Y",
             longFormat: "%A %-d %B %Y"
         },
         dateTimeFormat: {
             defaultFormat: "%-d %B %Y %-I:%M %p",
-            shortFormat: "%-d/%-m/%Y %-I:%M %p",
+            shortFormat: "%-d/%m/%Y %-I:%M %p",
             longFormat: "%A %-d %B %Y %-I:%M %p"
         },
         timeFormat: {
@@ -58,12 +58,12 @@ module.exports = {
             'au': {
                 dateFormat: {
                     defaultFormat: "%B %-d, %Y",
-                    shortFormat: "%-m/%-d/%Y",
+                    shortFormat: "%m/%-d/%Y",
                     longFormat: "%A, %B %-d, %Y"
                 },
                 dateTimeFormat: {
                     defaultFormat: "%B %-d, %Y %-I:%M %p",
-                    shortFormat: "%-m/%-d/%Y %-I:%M %p",
+                    shortFormat: "%m/%-d/%Y %-I:%M %p",
                     longFormat: "%A, %B %-d, %Y %-I:%M %p"
                 }
             },
@@ -74,7 +74,7 @@ module.exports = {
             'ie': {
                 dateTimeFormat: {
                     defaultFormat: "%-d %B %Y %-H:%M",
-                    shortFormat: "%-d/%-m/%Y %-H:%M",
+                    shortFormat: "%-d/%m/%Y %-H:%M",
                     longFormat: "%A %-d %B %Y %-H:%M"
                 },
                 timeFormat: {
@@ -148,12 +148,12 @@ module.exports = {
         },
         dateFormat: {
             defaultFormat: "%-d. %B %Y",
-            shortFormat: "%-d.%-m.%Y",
+            shortFormat: "%-d.%m.%Y",
             longFormat: "%A, %-d. %B %Y"
         },
         dateTimeFormat: {
             defaultFormat: "%-d. %B %Y %-H:%M",
-            shortFormat: "%-d.%-m.%Y %-H:%M",
+            shortFormat: "%-d.%m.%Y %-H:%M",
             longFormat: "%A, %-d. %B %Y %-H:%M"
         },
         timeFormat: {
@@ -198,12 +198,12 @@ module.exports = {
 
         territoryOverrides: {
             'br': {
-                translations: require('./translations/br-pt.js'),
+                translations: require('./translations/pt-br.js'),
                 dateFormat: {
-                    shortFormat: "%-d/%-m/%Y"
+                    shortFormat: "%-d/%m/%Y"
                 },
                 dateTimeFormat: {
-                    shortFormat: "%-d/%-m/%Y %-H:%M"
+                    shortFormat: "%-d/%m/%Y %-H:%M"
                 }
             }
         }
@@ -221,12 +221,12 @@ module.exports = {
         },
         dateFormat: {
             defaultFormat: "%-d %B %Y",
-            shortFormat: "%-d/%-m/%Y",
+            shortFormat: "%-d/%m/%Y",
             longFormat: "%A %-d %B %Y"
         },
         dateTimeFormat: {
             defaultFormat: "%-d %B %Y %-H:%M",
-            shortFormat: "%-d/%-m/%Y %-H:%M",
+            shortFormat: "%-d/%m/%Y %-H:%M",
             longFormat: "%A %-d %B %Y %-H:%M"
         },
         timeFormat: {
@@ -236,24 +236,24 @@ module.exports = {
         },
         territoryOverrides: {
             'ca': {
-                translations: require('./translations/ca-fr.js')
+                translations: require('./translations/fr-ca.js')
             }
         }
     },
-    'cn': {
+    'zh': {
         translations: require('./translations/cn.js'),
         pluralization: function () {
-            return "other";
+            return ["other"];
         },
         dateFormat: {
-            defaultFormat: "%Y年%B月%-d日",
-            shortFormat: "%Y-%-m-%-d",
-            longFormat: "%Y年%B月%-d日 %A"
+            defaultFormat: "%Y年%-m月%-d日",
+            shortFormat: "%Y-%m-%-d",
+            longFormat: "%Y年%-m月%-d日 %A"
         },
         dateTimeFormat: {
-            defaultFormat: "%Y年%B月%-d日 %-I:%M",
-            shortFormat: "%Y-%-m-%-d %-I:%M",
-            longFormat: "%Y年%B月%-d日 %A %-I:%M"
+            defaultFormat: "%Y年%-m月%-d日 %-I:%M",
+            shortFormat: "%Y-%m-%-d %-I:%M",
+            longFormat: "%Y年%-m月%-d日 %A %-I:%M"
         },
         timeFormat: {
             defaultFormat: "%-I:%M",
@@ -278,30 +278,30 @@ module.exports = {
             longFormat: "%A %-d. %B %Y"
         },
         dateTimeFormat: {
-            defaultFormat: "%-d. %B %Y klo %-H:%M",
-            shortFormat: "%-d.%-m.%Y klo %-H:%M",
-            longFormat: "%A %-d. %B %Y klo %-H:%M"
+            defaultFormat: "%-d. %B %Y klo %-H.%M",
+            shortFormat: "%-d.%-m.%Y klo %-H.%M",
+            longFormat: "%A %-d. %B %Y klo %-H.%M"
         },
         timeFormat: {
-            defaultFormat: "%-H:%M",
-            shortFormat: "%-H:%M",
-            longFormat: "%-H:%M:%S"
+            defaultFormat: "%-H.%M",
+            shortFormat: "%-H.%M",
+            longFormat: "%-H.%M.%S"
         }
     },
     'id': {
         translations: require('./translations/id.js'),
         pluralization: function () {
-            return "other";
+            return ["other"];
         },
         dateFormat: {
             defaultFormat: "%-d %B %Y",
-            shortFormat: "%-d-%-m-'%Y",
-            longFormat: "%A %-d, %B %Y"
+            shortFormat: "%-d-%-m-‘%y",
+            longFormat: "%A, %-d %B %Y"
         },
         dateTimeFormat: {
             defaultFormat: "%-d %B %Y %-H:%M",
-            shortFormat: "%-d-%-m-'%Y %-H:%M",
-            longFormat: "%A %-d, %B %Y %-H:%M"
+            shortFormat: "%-d %B %Y %-H:%M",
+            longFormat: "%A, %-d %B %Y %-H:%M"
         },
         timeFormat: {
             defaultFormat: "%-H:%M",
@@ -322,12 +322,12 @@ module.exports = {
         },
         dateFormat: {
             defaultFormat: "%-d %B %Y",
-            shortFormat: "%-d/%-m/%Y",
+            shortFormat: "%-d/%m/%Y",
             longFormat: "%A %-d %B %Y"
         },
         dateTimeFormat: {
             defaultFormat: "%-d %B %Y %-H:%M",
-            shortFormat: "%-d/%-m/%Y %-H:%M",
+            shortFormat: "%-d/%m/%Y %-H:%M",
             longFormat: "%A %-d %B %Y %-H:%M"
         },
         timeFormat: {
@@ -339,17 +339,17 @@ module.exports = {
     'ja': {
         translations: require('./translations/ja.js'),
         pluralization: function () {
-            return "other";
+            return ["other"];
         },
         dateFormat: {
-            defaultFormat: "%Y年%B月%-d日",
-            shortFormat: "%-m/%-d/%Y",
-            longFormat: "%Y年%B月%-d日 (%A日)"
+            defaultFormat: "%Y年%-m月%-d日",
+            shortFormat: "%m/%-d/%Y",
+            longFormat: "%Y年%-m月%-d日 (%A)"
         },
         dateTimeFormat: {
-            defaultFormat: "%Y年%B月%-d日 %-I:%M %p",
-            shortFormat: "%-m/%-d/%Y %-I:%M %p",
-            longFormat: "%Y年%B月%-d日 (%A日) %-I:%M %p"
+            defaultFormat: "%Y年%-m月%-d日 %-I:%M %p",
+            shortFormat: "%m/%-d/%Y %-I:%M %p",
+            longFormat: "%Y年%-m月%-d日 (%A) %-I:%M %p"
         },
         timeFormat: {
             defaultFormat: "%-I:%M %p",
@@ -360,28 +360,28 @@ module.exports = {
     'ko': {
         translations: require('./translations/ko.js'),
         pluralization: function () {
-            return "other";
+            return ["other"];
         },
         dateFormat: {
-            defaultFormat: "%Y년%B월%-d일",
-            shortFormat: "%Y.%-m.%-d",
-            longFormat: "%Y년%B월%-d일 %A"
+            defaultFormat: "%Y년 %-m월 %-d일",
+            shortFormat: "%Y.%m.%-d",
+            longFormat: "%Y년 %-m월 %-d일 %A"
         },
         dateTimeFormat: {
-            defaultFormat: "%Y년%B월%-d일 %-I:%M %p",
-            shortFormat: "%Y.%-m.%-d %-I:%M %p",
-            longFormat: "%Y년%B월%-d일 %A %-I:%M %p"
+            defaultFormat: "%Y년 %-m월 %-d일 %p %-I:%M",
+            shortFormat: "%Y.%m.%-d %p %-I:%M",
+            longFormat: "%Y년 %-m월 %-d일 %A %p %-I시 %M분"
         },
         timeFormat: {
-            defaultFormat: "%-I:%M:%S %p",
-            shortFormat: "%-I:%M:%S %p",
-            longFormat: "%-I:%M:%S %p"
+            defaultFormat: "%p %-I:%M",
+            shortFormat: "%p %-I:%M",
+            longFormat: "%p %-I:%M:%S"
         }
     },
     'my': {
         translations: require('./translations/my.js'),
         pluralization: function () {
-            return "other";
+            return ["other"];
         },
         dateFormat: {
             defaultFormat: "%-d %B %Y",
@@ -485,7 +485,7 @@ module.exports = {
         },
         territoryOverrides: {
             'mx': {
-                translations: require('./translations/mx-es.js'),
+                translations: require('./translations/es-mx.js'),
                 dateFormat: {
                     defaultFormat: "%-d de %B %Y",
                     longFormat: "%A %-d de %B del %Y"
@@ -576,14 +576,14 @@ module.exports = {
             return [key];
         },
         dateFormat: {
-            defaultFormat: "%-d %B. %Y",
-            shortFormat: "%-d/%-m/%Y",
-            longFormat: "%A. %-d %B. %Y"
+            defaultFormat: "%-d %B %Y",
+            shortFormat: "%-d/%m/%Y",
+            longFormat: "%A %-d %B %Y"
         },
         dateTimeFormat: {
-            defaultFormat: "%-d %B. %Y %-I:%M %p",
-            shortFormat: "%-d/%-m/%Y %-I:%M %p",
-            longFormat: "%A. %-d %B. %Y %-I:%M %p"
+            defaultFormat: "%-d %B %Y %-I:%M %p",
+            shortFormat: "%-d/%m/%Y %-I:%M %p",
+            longFormat: "%A %-d %B %Y %-I:%M %p"
         },
         timeFormat: {
             defaultFormat: "%-I:%M %p",
@@ -621,7 +621,7 @@ module.exports = {
     'th': {
         translations: require('./translations/th.js'),
         pluralization: function () {
-            return "other";
+            return ["other"];
         },
         dateFormat: {
             defaultFormat: "%-d %B %Y",
@@ -642,7 +642,7 @@ module.exports = {
     'tr': {
         translations: require('./translations/tr.js'),
         pluralization: function () {
-            return "other";
+            return ["other"];
         },
         dateFormat: {
             defaultFormat: "%-d %B %Y",
@@ -663,7 +663,7 @@ module.exports = {
     'vi': {
         translations: require('./translations/vi.js'),
         pluralization: function () {
-            return "other";
+            return ["other"];
         },
         dateFormat: {
             defaultFormat: "%-d %B %Y",
