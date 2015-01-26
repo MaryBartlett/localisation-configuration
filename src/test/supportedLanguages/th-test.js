@@ -16,9 +16,9 @@ describe('th language test', function () {
     });
 
     afterEach(function () {
-        config.territory = false;
-        config.language = false;
-        configuredLocaliser = false;
+        config.territory = null;
+        config.language = null;
+        configuredLocaliser = null;
     });
 
     it('should have correct pluralization rules', function () {
