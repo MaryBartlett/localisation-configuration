@@ -180,21 +180,22 @@ module.exports = {
     'jp': {
         currencyFormat: "%u%n",
         currencySymbol: "￥",
-        // currencyPrecision: 2,
+        currencyPrecision: 0,
         currencySeparator: "",
         currencyDelimiter: ",",
-        // numberPrecision: 2,
+        currencyStripInsignificantZeros: true,
+        numberPrecision: 2,
         numberSeparator: ".",
         numberDelimiter: ",",
         territoryDefaultLanguage: "ja"
     },
     'kr': {
         currencyFormat: "%n%u",
-        currencySymbol: "€",
-        // currencyPrecision: 2,
+        currencySymbol: "원",
+        currencyPrecision: 0,
         currencySeparator: "",
         currencyDelimiter: ",",
-        // numberPrecision: 2,
+        numberPrecision: 2,
         numberSeparator: ".",
         numberDelimiter: ",",
         territoryDefaultLanguage: "ko"
@@ -226,7 +227,7 @@ module.exports = {
         currencySymbol: "€",
         currencyPrecision: 2,
         currencySeparator: ",",
-        currencyDelimiter: " ",
+        currencyDelimiter: ".",
         numberPrecision: 2,
         numberSeparator: ",",
         numberDelimiter: ".",
@@ -237,10 +238,10 @@ module.exports = {
         currencySymbol: "kr",
         currencyPrecision: 2,
         currencySeparator: ",",
-        currencyDelimiter: ".", // should only apply from 10000 onwards
+        currencyDelimiter: ".",
         numberPrecision: 2,
         numberSeparator: ",",
-        numberDelimiter: ".", // should only apply from 10000 onwards
+        numberDelimiter: ".",
         territoryDefaultLanguage: "nb"
     },
     'pl': {
@@ -302,8 +303,9 @@ module.exports = {
         currencyFormat: "%n %u",
         currencySymbol: "kr",
         currencyPrecision: 2,
-        currencySeparator: ",", // not needed?
+        currencySeparator: ",",
         currencyDelimiter: "",
+        currencyStripInsignificantZeros: true,
         numberPrecision: 2,
         numberSeparator: ",",
         numberDelimiter: "",
