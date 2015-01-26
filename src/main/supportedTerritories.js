@@ -4,12 +4,6 @@ module.exports = {
         territoryDefaultLanguage: 'default'
     },
     'ae': {
-        languageOverrides: {
-            'ar': {
-                currencyFormat: "%n %u",
-                currencySymbol: "رس"
-            }
-        },
         currencyFormat: "%u %n",
         currencySymbol: "AED",
         currencyPrecision: 2,
@@ -292,6 +286,17 @@ module.exports = {
         numberSeparator: ",",
         numberDelimiter: "",
         territoryDefaultLanguage: "ru"
+    },
+    'sa': {
+        currencyFormat: "%n %u",
+        currencySymbol: "رس",
+        currencyPrecision: 2,
+        currencySeparator: ".",
+        currencyDelimiter: "",
+        numberPrecision: 2,
+        numberSeparator: ".",
+        numberDelimiter: "",
+        territoryDefaultLanguage: "ar"
     },
     'se': {
         currencyFormat: "%n %u",
