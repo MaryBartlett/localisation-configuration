@@ -7,11 +7,11 @@ var _ = require('lodash'),
     config.supportedTerritories = _.cloneDeep(require('supportedTerritories'));
     config.supportedLanguages = _.cloneDeep(require('supportedLanguages'));
 
-describe('de language test', function () {
+describe('zh language test', function () {
 
     beforeEach(function () {
-        config.territory = 'de';
-        config.language = 'de';
+        config.territory = 'tw';
+        config.language = 'zh';
         configuredLocaliser = localisation.createLocaliser(config);
     });
 
@@ -22,14 +22,12 @@ describe('de language test', function () {
     });
 
     it('should have correct pluralization rules', function () {
-        expect(config.supportedLanguages.de.pluralization).toBeFunction();
-        expect(config.supportedLanguages.de.pluralization(0)).toEqual(["other"]);
-        expect(config.supportedLanguages.de.pluralization(1)).toEqual(["one"]);
-        expect(config.supportedLanguages.de.pluralization(2)).toEqual(["other"]);
-
-        expect(configuredLocaliser._i18n.pluralization["de-DE"](0)).toEqual(["other"]);
-        expect(configuredLocaliser._i18n.pluralization["de-DE"](1)).toEqual(["one"]);
-        expect(configuredLocaliser._i18n.pluralization["de-DE"](2)).toEqual(["other"]);
+        expect(configuredLocaliser._i18n.pluralization["zh-TW"](0)).toEqual(["other"]);
+        expect(configuredLocaliser._i18n.pluralization["zh-TW"](1)).toEqual(["other"]);
+        expect(configuredLocaliser._i18n.pluralization["zh-TW"](2)).toEqual(["other"]);
+        expect(configuredLocaliser._i18n.pluralization["zh-TW"](3)).toEqual(["other"]);
+        expect(configuredLocaliser._i18n.pluralization["zh-TW"](11)).toEqual(["other"]);
+        expect(configuredLocaliser._i18n.pluralization["zh-TW"](1.2)).toEqual(["other"]);
     });
 
     describe('should correctly format', function () {
@@ -43,7 +41,7 @@ describe('de language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'date', 'default')).toEqual('30. März 2014');
+            }, 'date', 'default')).toEqual('2014年3月30日');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -52,7 +50,7 @@ describe('de language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'date', 'short')).toEqual('30.03.2014');
+            }, 'date', 'short')).toEqual('2014-03-30');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -61,7 +59,7 @@ describe('de language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'date', 'long')).toEqual('Sonntag, 30. März 2014');
+            }, 'date', 'long')).toEqual('2014年3月30日 星期日');
 
         });
 
@@ -74,7 +72,7 @@ describe('de language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'default')).toEqual('30. März 2014 12:30');
+            }, 'dateTime', 'default')).toEqual('2014年3月30日 12:30');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -83,7 +81,7 @@ describe('de language test', function () {
                 hour: 13,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'default')).toEqual('30. März 2014 13:30');
+            }, 'dateTime', 'default')).toEqual('2014年3月30日 13:30');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -92,7 +90,7 @@ describe('de language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'short')).toEqual('30.03.2014 12:30');
+            }, 'dateTime', 'short')).toEqual('2014-03-30 12:30');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -101,12 +99,11 @@ describe('de language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'long')).toEqual('Sonntag, 30. März 2014 12:30');
+            }, 'dateTime', 'long')).toEqual('2014年3月30日 星期日 12:30');
 
         });
 
         it('time', function () {
-
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
                 month: 3,
@@ -142,6 +139,8 @@ describe('de language test', function () {
                 minute: 30,
                 second: 0
             }, 'time', 'long')).toEqual('12:30:00');
+
         });
+
     });
 });

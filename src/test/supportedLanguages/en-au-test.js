@@ -75,6 +75,15 @@ describe('en-au language test', function () {
                 year: 2014,
                 month: 3,
                 day: 30,
+                hour: 13,
+                minute: 30,
+                second: 0
+            }, 'dateTime', 'default')).toEqual('March 30, 2014 1:30 pm');
+
+            expect(configuredLocaliser.formatDateTime({
+                year: 2014,
+                month: 3,
+                day: 30,
                 hour: 12,
                 minute: 30,
                 second: 0
@@ -101,6 +110,15 @@ describe('en-au language test', function () {
                 minute: 30,
                 second: 0
             }, 'time', 'default')).toEqual('12:30 pm');
+
+            expect(configuredLocaliser.formatDateTime({
+                year: 2014,
+                month: 3,
+                day: 30,
+                hour: 13,
+                minute: 30,
+                second: 0
+            }, 'time', 'default')).toEqual('1:30 pm');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,

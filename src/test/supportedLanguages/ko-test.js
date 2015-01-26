@@ -80,6 +80,15 @@ describe('ko language test', function () {
                 year: 2014,
                 month: 3,
                 day: 30,
+                hour: 13,
+                minute: 30,
+                second: 0
+            }, 'dateTime', 'default')).toEqual('2014년 3월 30일 오후 1:30');
+
+            expect(configuredLocaliser.formatDateTime({
+                year: 2014,
+                month: 3,
+                day: 30,
                 hour: 12,
                 minute: 30,
                 second: 0
@@ -106,6 +115,15 @@ describe('ko language test', function () {
                 minute: 30,
                 second: 0
             }, 'time', 'default')).toEqual('오후 12:30');
+
+            expect(configuredLocaliser.formatDateTime({
+                year: 2014,
+                month: 3,
+                day: 30,
+                hour: 13,
+                minute: 30,
+                second: 0
+            }, 'time', 'default')).toEqual('오후 1:30');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,

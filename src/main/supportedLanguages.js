@@ -85,12 +85,12 @@ module.exports = {
             },
             'ae': {
                 dateFormat: {
-                    defaultFormat: "%-d %B. %Y",
-                    longFormat: "%A. %-d %B. %Y"
+                    defaultFormat: "%-d %B, %Y",
+                    longFormat: "%A, %-d %B, %Y"
                 },
                 dateTimeFormat: {
-                    defaultFormat: "%-d %B. %Y %-I:%M %p",
-                    longFormat: "%A. %-d %B. %Y %-I:%M %p"
+                    defaultFormat: "%-d %B, %Y %-I:%M %p",
+                    longFormat: "%A, %-d %B, %Y %-I:%M %p"
                 }
             },
             'sg': {
@@ -107,11 +107,11 @@ module.exports = {
             },
             'za': {
                 dateFormat: {
-                    shortFormat: "%Y/%-m/%-d"
+                    shortFormat: "%Y/%m/%-d"
                 },
                 dateTimeFormat: {
                     defaultFormat: "%-d %B %Y %-H:%M",
-                    shortFormat: "%Y/%-m/%-d %-H:%M",
+                    shortFormat: "%Y/%m/%-d %-H:%M",
                     longFormat: "%A %-d %B %Y %-H:%M"
                 },
                 timeFormat: {
@@ -123,13 +123,13 @@ module.exports = {
             'us': {
                 dateFormat: {
                     defaultFormat: "%B %-d %Y",
-                    shortFormat: "%-m/%-d/%Y",
+                    shortFormat: "%m/%-d/%Y",
                     longFormat: "%A %B %-d %Y"
                 },
                 dateTimeFormat: {
-                    defaultFormat: "%B %-d %Y %-I:%M%p",
-                    shortFormat: "%-m/%-d/%Y %-I:%M%p",
-                    longFormat: "%A %B %-d %Y %-I:%M%p"
+                    defaultFormat: "%B %-d %Y %-I:%M %p",
+                    shortFormat: "%m/%-d/%Y %-I:%M %p",
+                    longFormat: "%A %B %-d %Y %-I:%M %p"
                 }
             }
 
@@ -182,12 +182,12 @@ module.exports = {
         },
         dateFormat: {
             defaultFormat: "%-d de %B de %Y",
-            shortFormat: "%Y/%-m/%-d",
+            shortFormat: "%Y/%m/%-d",
             longFormat: "%A, %-d de %B de %Y"
         },
         dateTimeFormat: {
             defaultFormat: "%-d de %B de %Y %-H:%M",
-            shortFormat: "%Y/%-m/%-d %-H:%M",
+            shortFormat: "%Y/%m/%-d %-H:%M",
             longFormat: "%A, %-d de %B de %Y %-H:%M"
         },
         timeFormat: {
@@ -241,7 +241,7 @@ module.exports = {
         }
     },
     'zh': {
-        translations: require('./translations/cn.js'),
+        translations: require('./translations/zh.js'),
         pluralization: function () {
             return ["other"];
         },
@@ -251,14 +251,17 @@ module.exports = {
             longFormat: "%Y年%-m月%-d日 %A"
         },
         dateTimeFormat: {
-            defaultFormat: "%Y年%-m月%-d日 %-I:%M",
-            shortFormat: "%Y-%m-%-d %-I:%M",
-            longFormat: "%Y年%-m月%-d日 %A %-I:%M"
+            defaultFormat: "%Y年%-m月%-d日 %-H:%M",
+            shortFormat: "%Y-%m-%-d %-H:%M",
+            longFormat: "%Y年%-m月%-d日 %A %-H:%M"
         },
         timeFormat: {
-            defaultFormat: "%-I:%M",
-            shortFormat: "%-I:%M",
-            longFormat: "%-I:%M:%S"
+            defaultFormat: "%-H:%M",
+            shortFormat: "%-H:%M",
+            longFormat: "%-H:%M:%S"
+        },
+        territoryOverrides: {
+            'tw': {}
         }
     },
     'fi': {
@@ -378,19 +381,19 @@ module.exports = {
             longFormat: "%p %-I:%M:%S"
         }
     },
-    'my': {
-        translations: require('./translations/my.js'),
+    'ms': {
+        translations: require('./translations/ms.js'),
         pluralization: function () {
             return ["other"];
         },
         dateFormat: {
             defaultFormat: "%-d %B %Y",
-            shortFormat: "%-d/%-m/%Y",
+            shortFormat: "%-d/%m/%Y",
             longFormat: "%A, %-d %B %Y"
         },
         dateTimeFormat: {
             defaultFormat: "%-d %B %Y %-I:%M %p",
-            shortFormat: "%-d/%-m/%Y %-I:%M %p",
+            shortFormat: "%-d %B %Y %-I:%M %p",
             longFormat: "%A, %-d %B %Y %-I:%M %p"
         },
         timeFormat: {
@@ -412,12 +415,12 @@ module.exports = {
         },
         dateFormat: {
             defaultFormat: "%-d %B %Y",
-            shortFormat: "%-d-%-m-%Y",
+            shortFormat: "%-d-%m-%Y",
             longFormat: "%A %-d %B %Y"
         },
         dateTimeFormat: {
             defaultFormat: "%-d %B %Y %-H:%M",
-            shortFormat: "%-d-%-m-%Y %-H:%M",
+            shortFormat: "%-d-%m-%Y %-H:%M",
             longFormat: "%A %-d %B %Y %-H:%M"
         },
         timeFormat: {
@@ -434,7 +437,7 @@ module.exports = {
                 key = "one";
             } else if ([2, 3, 4].indexOf(count % 10) >= 0 && [12, 13, 14].indexOf(count % 100) < 0) {
                 key = "few";
-            } else if (count % 10 === 0 || [5, 6, 7, 8, 9].indexOf(count % 10) >= 0 || [11, 12, 13, 14].indexOf(count % 100) >= 0) {
+            } else if (count % 10 === 0 || [1, 5, 6, 7, 8, 9].indexOf(count % 10) >= 0 || [11, 12, 13, 14].indexOf(count % 100) >= 0) {
                 key = "many";
             } else {
                 key = "other";
@@ -443,18 +446,18 @@ module.exports = {
         },
         dateFormat: {
             defaultFormat: "%-d %B %Y",
-            shortFormat: "%-d/%-m/%Y",
+            shortFormat: "%Y-%m-%-d",
             longFormat: "%A, %-d %B %Y"
         },
         dateTimeFormat: {
-            defaultFormat: "%Y %B %-d %-H.%M",
-            shortFormat: "%Y-%-m-%-d %-H.%M",
-            longFormat: "%A, %-d %B %Y %-H.%M"
+            defaultFormat: "%-d %B %Y %-H:%M",
+            shortFormat: "%Y-%m-%-d %-H:%M",
+            longFormat: "%A, %-d %B %Y %-H:%M"
         },
         timeFormat: {
-            defaultFormat: "%-H.%M",
-            shortFormat: "%-H.%M",
-            longFormat: "%-H.%M:%S"
+            defaultFormat: "%-H:%M",
+            shortFormat: "%-H:%M",
+            longFormat: "%-H:%M:%S"
         }
     },
     'es': {
@@ -470,18 +473,18 @@ module.exports = {
         },
         dateFormat: {
             defaultFormat: "%-d de %B de %Y",
-            shortFormat: "%-d/%-m/%Y",
+            shortFormat: "%-d/%m/%Y",
             longFormat: "%A %-d de %B de %Y"
         },
         dateTimeFormat: {
             defaultFormat: "%-d de %B de %Y %-H:%M",
-            shortFormat: "%-d/%-m/%Y %-H:%M",
+            shortFormat: "%-d/%m/%Y %-H:%M",
             longFormat: "%A %-d de %B de %Y a las %-H:%M"
         },
         timeFormat: {
-            defaultFormat: "%-I:%M %p",
-            shortFormat: "%-I:%M %p",
-            longFormat: "%-I:%M:%S %p"
+            defaultFormat: "%-H:%M",
+            shortFormat: "%-H:%M",
+            longFormat: "%-H:%M:%S"
         },
         territoryOverrides: {
             'mx': {
@@ -511,18 +514,18 @@ module.exports = {
         },
         dateFormat: {
             defaultFormat: "%-d. %B %Y",
-            shortFormat: "%-d.%-m.%Y",
+            shortFormat: "%-d.%m.%Y",
             longFormat: "%A %-d. %B %Y"
         },
         dateTimeFormat: {
             defaultFormat: "%-d. %B %Y kl. %-H.%M",
-            shortFormat: "%-d.%-m.%Y kl. %-H.%M",
+            shortFormat: "%-d.%m.%Y kl. %-H.%M",
             longFormat: "%A %-d. %B %Y kl. %-H.%M"
         },
         timeFormat: {
             defaultFormat: "%-H.%M",
             shortFormat: "%-H.%M",
-            longFormat: "%-H.%M:%S"
+            longFormat: "%-H.%M.%S"
         }
     },
     'ru': {
@@ -542,13 +545,13 @@ module.exports = {
         },
         dateFormat: {
             defaultFormat: "%-d %B %Y",
-            shortFormat: "%-d.%-m.%Y",
+            shortFormat: "%-d.%m.%Y",
             longFormat: "%A, %-d %B %Y"
         },
         dateTimeFormat: {
             defaultFormat: "%-d %B %Y %-H:%M",
-            shortFormat: "%-d.%-m.%Y %-H:%M",
-            longFormat: "A, %-d %B %Y %-H:%M"
+            shortFormat: "%-d.%m.%Y %-H:%M",
+            longFormat: "%A, %-d %B %Y %-H:%M"
         },
         timeFormat: {
             defaultFormat: "%-H:%M",
@@ -604,12 +607,12 @@ module.exports = {
         },
         dateFormat: {
             defaultFormat: "%-d %B %Y",
-            shortFormat: "%Y-%-m-%-d",
+            shortFormat: "%Y-%m-%-d",
             longFormat: "%A den %-d %B %Y"
         },
         dateTimeFormat: {
             defaultFormat: "%-d %B %Y %-H:%M",
-            shortFormat: "%Y-%-m-%-d %-H:%M",
+            shortFormat: "%Y-%m-%-d %-H:%M",
             longFormat: "%A den %-d %B %Y %-H:%M"
         },
         timeFormat: {
@@ -625,12 +628,12 @@ module.exports = {
         },
         dateFormat: {
             defaultFormat: "%-d %B %Y",
-            shortFormat: "%-d/%-m/%Y",
+            shortFormat: "%-d/%m/%Y",
             longFormat: "%A %-d %B %Y"
         },
         dateTimeFormat: {
             defaultFormat: "%-d %B %Y %-H:%M",
-            shortFormat: "%-d/%-m/%Y %-H:%M",
+            shortFormat: "%-d/%m/%Y %-H:%M",
             longFormat: "%A %-d %B %Y %-H:%M"
         },
         timeFormat: {
@@ -646,12 +649,12 @@ module.exports = {
         },
         dateFormat: {
             defaultFormat: "%-d %B %Y",
-            shortFormat: "%-d.%-m.%Y",
+            shortFormat: "%-d.%m.%Y",
             longFormat: "%-d %B %Y %A"
         },
         dateTimeFormat: {
             defaultFormat: "%-d %B %Y %-H:%M",
-            shortFormat: "%-d.%-m.%Y %-H:%M",
+            shortFormat: "%-d.%m.%Y %-H:%M",
             longFormat: "%-d %B %Y %A %-H:%M"
         },
         timeFormat: {
@@ -667,12 +670,12 @@ module.exports = {
         },
         dateFormat: {
             defaultFormat: "%-d %B %Y",
-            shortFormat: "%-d/%-m/%Y",
+            shortFormat: "%-d/%m/%Y",
             longFormat: "%A %-d %B %Y"
         },
         dateTimeFormat: {
             defaultFormat: "%-d %B %Y %-I:%M %p",
-            shortFormat: "%-d/%-m/%Y %-I:%M %p",
+            shortFormat: "%-d/%m/%Y %-I:%M %p",
             longFormat: "%A %-d %B %Y %-I:%M %p"
         },
         timeFormat: {

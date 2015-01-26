@@ -80,6 +80,15 @@ describe('fi language test', function () {
                 year: 2014,
                 month: 3,
                 day: 30,
+                hour: 13,
+                minute: 30,
+                second: 0
+            }, 'dateTime', 'default')).toEqual('30. maaliskuuta 2014 klo 13.30');
+
+            expect(configuredLocaliser.formatDateTime({
+                year: 2014,
+                month: 3,
+                day: 30,
                 hour: 12,
                 minute: 30,
                 second: 0
@@ -106,6 +115,15 @@ describe('fi language test', function () {
                 minute: 30,
                 second: 0
             }, 'time', 'default')).toEqual('12.30');
+
+            expect(configuredLocaliser.formatDateTime({
+                year: 2014,
+                month: 3,
+                day: 30,
+                hour: 13,
+                minute: 30,
+                second: 0
+            }, 'time', 'default')).toEqual('13.30');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,

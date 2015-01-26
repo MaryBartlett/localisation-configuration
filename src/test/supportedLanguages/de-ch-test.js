@@ -7,10 +7,10 @@ var _ = require('lodash'),
     config.supportedTerritories = _.cloneDeep(require('supportedTerritories'));
     config.supportedLanguages = _.cloneDeep(require('supportedLanguages'));
 
-describe('de language test', function () {
+describe('de-ch language test', function () {
 
     beforeEach(function () {
-        config.territory = 'de';
+        config.territory = 'ch';
         config.language = 'de';
         configuredLocaliser = localisation.createLocaliser(config);
     });
@@ -22,14 +22,9 @@ describe('de language test', function () {
     });
 
     it('should have correct pluralization rules', function () {
-        expect(config.supportedLanguages.de.pluralization).toBeFunction();
-        expect(config.supportedLanguages.de.pluralization(0)).toEqual(["other"]);
-        expect(config.supportedLanguages.de.pluralization(1)).toEqual(["one"]);
-        expect(config.supportedLanguages.de.pluralization(2)).toEqual(["other"]);
-
-        expect(configuredLocaliser._i18n.pluralization["de-DE"](0)).toEqual(["other"]);
-        expect(configuredLocaliser._i18n.pluralization["de-DE"](1)).toEqual(["one"]);
-        expect(configuredLocaliser._i18n.pluralization["de-DE"](2)).toEqual(["other"]);
+        expect(configuredLocaliser._i18n.pluralization["de-CH"](0)).toEqual(["other"]);
+        expect(configuredLocaliser._i18n.pluralization["de-CH"](1)).toEqual(["one"]);
+        expect(configuredLocaliser._i18n.pluralization["de-CH"](2)).toEqual(["other"]);
     });
 
     describe('should correctly format', function () {
@@ -84,6 +79,7 @@ describe('de language test', function () {
                 minute: 30,
                 second: 0
             }, 'dateTime', 'default')).toEqual('30. März 2014 13:30');
+
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,

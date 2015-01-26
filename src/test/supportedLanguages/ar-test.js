@@ -92,6 +92,15 @@ describe('ar language test', function () {
                 year: 2014,
                 month: 3,
                 day: 30,
+                hour: 13,
+                minute: 30,
+                second: 0
+            }, 'dateTime', 'default')).toEqual('30 مارس، 2014 1:30 م');
+
+            expect(configuredLocaliser.formatDateTime({
+                year: 2014,
+                month: 3,
+                day: 30,
                 hour: 12,
                 minute: 30,
                 second: 0
@@ -118,6 +127,15 @@ describe('ar language test', function () {
                 minute: 30,
                 second: 0
             }, 'time', 'default')).toEqual('12:30 م');
+
+            expect(configuredLocaliser.formatDateTime({
+                year: 2014,
+                month: 3,
+                day: 30,
+                hour: 13,
+                minute: 30,
+                second: 0
+            }, 'time', 'default')).toEqual('1:30 م');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
