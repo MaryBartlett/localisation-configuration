@@ -33,6 +33,10 @@ The supportedLanguages[language] object contains the language specific informati
  - timeFormat
  - any territory overrides
 
+
+A page of the output of the configurations can be found <a href="https://github.brislabs.com/pages/web/localisation-configuration/">here</a>
+
+
 ## Grunt
 
 Uses grunt to lint, test and package the assets.
