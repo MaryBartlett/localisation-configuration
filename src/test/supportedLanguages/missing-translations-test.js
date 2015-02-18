@@ -9,20 +9,16 @@ _.forEach( _.omit(supportedLanguages,'default'), function (translationStrings, l
             var translations = supportedLanguages[languageName].translations,
                 engineering = supportedLanguages['default'].translations,
                 iterateTranslationObject = function ( referenceTranslation, realTranslation ) {
-                  for (var prop in referenceTranslation) {
-                    if (referenceTranslation.hasOwnProperty(prop)) {
-                      // Ensure that translation has same property structure
-                      // than default / engineering english
-                      expect( realTranslation[prop] ).toBeDefined('missing key/context ' + prop + ' is missing from ' + languageName);
-                      if ( _.isObject(referenceTranslation[prop]) && !_.isArray(referenceTranslation[prop])) {
-                          // Loop if we find sub contexts
-                          iterateTranslationObject( referenceTranslation[prop], realTranslation[prop] );
-                      } else if (_.isArray(referenceTranslation[prop])) {
-                          // if the translation property is array, check it against reference translation to be equal in size.
-                          expect(realTranslation[prop].length ).toBe( referenceTranslation[prop].length );
-                      }
-                    }
-                  }
+                    _.forOwn(referenceTranslation, function (value, prop) {
+                        expect( realTranslation[prop] ).toBeDefined('missing key/context ' + prop + ' is missing from ' + languageName);
+                        if ( _.isObject(value) && !_.isArray(value)) {
+                            // Loop if we find sub contexts
+                            iterateTranslationObject( referenceTranslation[prop], realTranslation[prop] );
+                        } else if (_.isArray(value)) {
+                            // if the translation property is array, check it against reference translation to be equal in size.
+                            expect(realTranslation[prop].length ).toBe( value.length );
+                        }
+                    });
                 };
 
             iterateTranslationObject(engineering, translations);
