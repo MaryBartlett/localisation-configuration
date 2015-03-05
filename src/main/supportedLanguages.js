@@ -1,16 +1,28 @@
 'use strict';
+
+// Object containing functions for determining the two most common plural forms
+// amongst the currently supported languages.
+var pluralForms = {
+
+    // 0 -> Other
+    // 1 -> One
+    // 2 -> Other
+    singularOneElseOther: function (count) {
+        return (count === 1) ? ['one'] : ['other'];
+    },
+
+    // 0 -> Other
+    // 1 -> Other
+    // 2 -> Other
+    other: function () {
+        return ["other"];
+    }
+};
+
 module.exports = {
     'default': {
         translations: require('./translations/en.js'),
-        pluralization: function (count) {
-            var key = false;
-            if (count === 1) {
-                key = "one";
-            } else {
-                key = "other";
-            }
-            return [key];
-        },
+        pluralization: pluralForms.singularOneElseOther,
         dateFormat: {
             defaultFormat: "%-d %B %Y",
             shortFormat: "%-d/%-m/%Y",
@@ -29,15 +41,7 @@ module.exports = {
     },
     'en': {
         translations: require('./translations/en.js'),
-        pluralization: function (count) {
-            var key = false;
-            if (count === 1) {
-                key = "one";
-            } else {
-                key = "other";
-            }
-            return [key];
-        },
+        pluralization: pluralForms.singularOneElseOther,
         dateFormat: {
             defaultFormat: "%-d %B %Y",
             shortFormat: "%-d/%m/%Y",
@@ -137,15 +141,7 @@ module.exports = {
     },
     'de': {
         translations: require('./translations/de.js'),
-        pluralization: function (count) {
-            var key = false;
-            if (count === 1) {
-                key = "one";
-            } else {
-                key = "other";
-            }
-            return [key];
-        },
+        pluralization: pluralForms.singularOneElseOther,
         dateFormat: {
             defaultFormat: "%-d. %B %Y",
             shortFormat: "%-d.%m.%Y",
@@ -171,15 +167,7 @@ module.exports = {
     },
     'pt': {
         translations: require('./translations/pt.js'),
-        pluralization: function (count) {
-            var key = false;
-            if (count === 1) {
-                key = "one";
-            } else {
-                key = "other";
-            }
-            return [key];
-        },
+        pluralization: pluralForms.singularOneElseOther,
         dateFormat: {
             defaultFormat: "%-d de %B de %Y",
             shortFormat: "%Y/%m/%-d",
@@ -210,15 +198,7 @@ module.exports = {
     },
     'fr': {
         translations: require('./translations/fr.js'),
-        pluralization: function (count) {
-            var key = false;
-            if (count === 1) {
-                key = "one";
-            } else {
-                key = "other";
-            }
-            return [key];
-        },
+        pluralization: pluralForms.singularOneElseOther,
         dateFormat: {
             defaultFormat: "%-d %B %Y",
             shortFormat: "%-d/%m/%Y",
@@ -242,9 +222,7 @@ module.exports = {
     },
     'zh': {
         translations: require('./translations/zh.js'),
-        pluralization: function () {
-            return ["other"];
-        },
+        pluralization: pluralForms.other,
         dateFormat: {
             defaultFormat: "%Y年%-m月%-d日",
             shortFormat: "%Y-%m-%-d",
@@ -266,15 +244,7 @@ module.exports = {
     },
     'fi': {
         translations: require('./translations/fi.js'),
-        pluralization: function (count) {
-            var key = false;
-            if (count === 1) {
-                key = "one";
-            } else {
-                key = "other";
-            }
-            return [key];
-        },
+        pluralization: pluralForms.singularOneElseOther,
         dateFormat: {
             defaultFormat: "%-d. %B %Y",
             shortFormat: "%-d.%-m.%Y",
@@ -293,9 +263,7 @@ module.exports = {
     },
     'id': {
         translations: require('./translations/id.js'),
-        pluralization: function () {
-            return ["other"];
-        },
+        pluralization: pluralForms.other,
         dateFormat: {
             defaultFormat: "%-d %B %Y",
             shortFormat: "%-d-%-m-‘%y",
@@ -314,15 +282,7 @@ module.exports = {
     },
     'it': {
         translations: require('./translations/it.js'),
-        pluralization: function (count) {
-            var key = false;
-            if (count === 1) {
-                key = "one";
-            } else {
-                key = "other";
-            }
-            return [key];
-        },
+        pluralization: pluralForms.singularOneElseOther,
         dateFormat: {
             defaultFormat: "%-d %B %Y",
             shortFormat: "%-d/%m/%Y",
@@ -341,9 +301,7 @@ module.exports = {
     },
     'ja': {
         translations: require('./translations/ja.js'),
-        pluralization: function () {
-            return ["other"];
-        },
+        pluralization: pluralForms.other,
         dateFormat: {
             defaultFormat: "%Y年%-m月%-d日",
             shortFormat: "%m/%-d/%Y",
@@ -362,9 +320,7 @@ module.exports = {
     },
     'ko': {
         translations: require('./translations/ko.js'),
-        pluralization: function () {
-            return ["other"];
-        },
+        pluralization: pluralForms.other,
         dateFormat: {
             defaultFormat: "%Y년 %-m월 %-d일",
             shortFormat: "%Y.%m.%-d",
@@ -383,9 +339,7 @@ module.exports = {
     },
     'ms': {
         translations: require('./translations/ms.js'),
-        pluralization: function () {
-            return ["other"];
-        },
+        pluralization: pluralForms.other,
         dateFormat: {
             defaultFormat: "%-d %B %Y",
             shortFormat: "%-d/%m/%Y",
@@ -404,15 +358,7 @@ module.exports = {
     },
     'nl': {
         translations: require('./translations/nl.js'),
-        pluralization: function (count) {
-            var key = false;
-            if (count === 1) {
-                key = "one";
-            } else {
-                key = "other";
-            }
-            return [key];
-        },
+        pluralization: pluralForms.singularOneElseOther,
         dateFormat: {
             defaultFormat: "%-d %B %Y",
             shortFormat: "%-d-%m-%Y",
@@ -462,15 +408,7 @@ module.exports = {
     },
     'es': {
         translations: require('./translations/es.js'),
-        pluralization: function (count) {
-            var key = false;
-            if (count === 1) {
-                key = "one";
-            } else {
-                key = "other";
-            }
-            return [key];
-        },
+        pluralization: pluralForms.singularOneElseOther,
         dateFormat: {
             defaultFormat: "%-d de %B de %Y",
             shortFormat: "%-d/%m/%Y",
@@ -503,15 +441,7 @@ module.exports = {
     },
     'nb': {
         translations: require('./translations/nb.js'),
-        pluralization: function (count) {
-            var key = false;
-            if (count === 1) {
-                key = "one";
-            } else {
-                key = "other";
-            }
-            return [key];
-        },
+        pluralization: pluralForms.singularOneElseOther,
         dateFormat: {
             defaultFormat: "%-d. %B %Y",
             shortFormat: "%-d.%m.%Y",
@@ -596,15 +526,7 @@ module.exports = {
     },
     'sv': {
         translations: require('./translations/sv.js'),
-        pluralization: function (count) {
-            var key = false;
-            if (count === 1) {
-                key = "one";
-            } else {
-                key = "other";
-            }
-            return [key];
-        },
+        pluralization: pluralForms.singularOneElseOther,
         dateFormat: {
             defaultFormat: "%-d %B %Y",
             shortFormat: "%Y-%m-%-d",
@@ -623,9 +545,7 @@ module.exports = {
     },
     'th': {
         translations: require('./translations/th.js'),
-        pluralization: function () {
-            return ["other"];
-        },
+        pluralization: pluralForms.other,
         dateFormat: {
             defaultFormat: "%-d %B %Y",
             shortFormat: "%-d/%m/%Y",
@@ -644,9 +564,7 @@ module.exports = {
     },
     'tr': {
         translations: require('./translations/tr.js'),
-        pluralization: function () {
-            return ["other"];
-        },
+        pluralization: pluralForms.other,
         dateFormat: {
             defaultFormat: "%-d %B %Y",
             shortFormat: "%-d.%m.%Y",
@@ -665,9 +583,7 @@ module.exports = {
     },
     'vi': {
         translations: require('./translations/vi.js'),
-        pluralization: function () {
-            return ["other"];
-        },
+        pluralization: pluralForms.other,
         dateFormat: {
             defaultFormat: "%-d %B %Y",
             shortFormat: "%-d/%m/%Y",
@@ -683,6 +599,24 @@ module.exports = {
             shortFormat: "%-I:%M %p",
             longFormat: "%-I:%M:%S %p"
         }
-
+    },
+    'ca': {
+        translations: require('./translations/ca.js'),
+        pluralization: pluralForms.singularOneElseOther,
+        dateFormat: {
+            defaultFormat: "%-d de %B de %Y",
+            shortFormat: "%-d/%m/%Y",
+            longFormat: "%A %-d de %B de %Y"
+        },
+        dateTimeFormat: {
+            defaultFormat: "%A %-d de %B de %Y a les %-H:%M",
+            shortFormat: "%-d/%m/%Y %-H:%M",
+            longFormat: "%A %-d de %B de %Y a les %-H:%M"
+        },
+        timeFormat: {
+            defaultFormat: "%-H:%M",
+            shortFormat: "%-H:%M",
+            longFormat: "%-H:%M:%S"
+        }
     }
 };
