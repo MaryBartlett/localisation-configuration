@@ -129,6 +129,18 @@ expected = {
             oneThousandPointTwoFive: '1.000,25'
         }
     },
+    'es-ca': {
+        currency: {
+            one: '1,00 €',
+            oneHundredPointTwoFive: '100,25 €',
+            oneThousandPointTwoFive: '1.000,25 €'
+        },
+        number: {
+            one: '1',
+            oneHundredPointTwoFive: '100,25',
+            oneThousandPointTwoFive: '1.000,25'
+        }
+    },
     'fi-fi': {
         currency: {
             one: '1,00 €',
