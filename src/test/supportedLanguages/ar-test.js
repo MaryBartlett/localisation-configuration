@@ -44,6 +44,10 @@ describe('ar language test', function () {
         expect(configuredLocaliser._i18n.pluralization["ar-SA"](11)).toEqual(["many"]);
     });
 
+    it('should have correct text direction', function () {
+        expect( config.supportedLanguages[ config.language ].isRTL ).toBeTrue();
+    });
+
     describe('should correctly format', function () {
 
         it('date', function () {

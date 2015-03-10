@@ -31,6 +31,7 @@ The supportedLanguages[language] object contains the language specific informati
  - dateTranslations
  - dateFormat
  - timeFormat
+ - isRTL
  - any territory overrides
 
 

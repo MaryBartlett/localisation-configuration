@@ -37,7 +37,8 @@ module.exports = {
             defaultFormat: "%-I:%M %p",
             shortFormat: "%-I:%M %p",
             longFormat: "%-I:%M:%S %p"
-        }
+        },
+        isRTL: false
     },
     'en': {
         translations: require('./translations/en.js'),
@@ -57,6 +58,7 @@ module.exports = {
             shortFormat: "%-I:%M %p",
             longFormat: "%-I:%M:%S %p"
         },
+        isRTL: false,
 
         territoryOverrides: {
             'au': {
@@ -157,6 +159,7 @@ module.exports = {
             shortFormat: "%-H:%M",
             longFormat: "%-H:%M:%S"
         },
+        isRTL: false,
 
         territoryOverrides: {
             'at': {
@@ -183,6 +186,7 @@ module.exports = {
             shortFormat: "%-H:%M",
             longFormat: "%-H:%M:%S"
         },
+        isRTL: false,
 
         territoryOverrides: {
             'br': {
@@ -214,6 +218,7 @@ module.exports = {
             shortFormat: "%-H:%M",
             longFormat: "%-H:%M:%S"
         },
+        isRTL: false,
         territoryOverrides: {
             'ca': {
                 translations: require('./translations/fr-ca.js')
@@ -238,6 +243,7 @@ module.exports = {
             shortFormat: "%-H:%M",
             longFormat: "%-H:%M:%S"
         },
+        isRTL: false,
         territoryOverrides: {
             'tw': {}
         }
@@ -259,7 +265,8 @@ module.exports = {
             defaultFormat: "%-H.%M",
             shortFormat: "%-H.%M",
             longFormat: "%-H.%M.%S"
-        }
+        },
+        isRTL: false
     },
     'id': {
         translations: require('./translations/id.js'),
@@ -278,7 +285,8 @@ module.exports = {
             defaultFormat: "%-H:%M",
             shortFormat: "%-H:%M",
             longFormat: "%-H:%M:%S"
-        }
+        },
+        isRTL: false
     },
     'it': {
         translations: require('./translations/it.js'),
@@ -297,7 +305,8 @@ module.exports = {
             defaultFormat: "%-H:%M",
             shortFormat: "%-H:%M",
             longFormat: "%-H:%M:%S"
-        }
+        },
+        isRTL: false
     },
     'ja': {
         translations: require('./translations/ja.js'),
@@ -316,7 +325,8 @@ module.exports = {
             defaultFormat: "%-I:%M %p",
             shortFormat: "%-I:%M %p",
             longFormat: "%-I:%M:%S %p"
-        }
+        },
+        isRTL: false
     },
     'ko': {
         translations: require('./translations/ko.js'),
@@ -335,7 +345,8 @@ module.exports = {
             defaultFormat: "%p %-I:%M",
             shortFormat: "%p %-I:%M",
             longFormat: "%p %-I:%M:%S"
-        }
+        },
+        isRTL: false
     },
     'ms': {
         translations: require('./translations/ms.js'),
@@ -354,7 +365,8 @@ module.exports = {
             defaultFormat: "%-I:%M %p",
             shortFormat: "%-I:%M %p",
             longFormat: "%-I:%M:%S %p"
-        }
+        },
+        isRTL: false
     },
     'nl': {
         translations: require('./translations/nl.js'),
@@ -373,7 +385,8 @@ module.exports = {
             defaultFormat: "%-H:%M",
             shortFormat: "%-H:%M",
             longFormat: "%-H:%M:%S"
-        }
+        },
+        isRTL: false
     },
     'pl': {
         translations: require('./translations/pl.js'),
@@ -404,7 +417,8 @@ module.exports = {
             defaultFormat: "%-H:%M",
             shortFormat: "%-H:%M",
             longFormat: "%-H:%M:%S"
-        }
+        },
+        isRTL: false
     },
     'es': {
         translations: require('./translations/es.js'),
@@ -424,6 +438,7 @@ module.exports = {
             shortFormat: "%-H:%M",
             longFormat: "%-H:%M:%S"
         },
+        isRTL: false,
         territoryOverrides: {
             'mx': {
                 translations: require('./translations/es-mx.js'),
@@ -456,7 +471,8 @@ module.exports = {
             defaultFormat: "%-H.%M",
             shortFormat: "%-H.%M",
             longFormat: "%-H.%M.%S"
-        }
+        },
+        isRTL: false
     },
     'ru': {
         translations: require('./translations/ru.js'),
@@ -487,7 +503,8 @@ module.exports = {
             defaultFormat: "%-H:%M",
             shortFormat: "%-H:%M",
             longFormat: "%-H:%M:%S"
-        }
+        },
+        isRTL: false
     },
     'ar': {
         translations: require('./translations/ar.js'),
@@ -522,7 +539,8 @@ module.exports = {
             defaultFormat: "%-I:%M %p",
             shortFormat: "%-I:%M %p",
             longFormat: "%-I:%M:%S %p"
-        }
+        },
+        isRTL: true
     },
     'sv': {
         translations: require('./translations/sv.js'),
@@ -541,7 +559,8 @@ module.exports = {
             defaultFormat: "%-H:%M",
             shortFormat: "%-H:%M",
             longFormat: "%-H:%M:%S"
-        }
+        },
+        isRTL: false
     },
     'th': {
         translations: require('./translations/th.js'),
@@ -560,7 +579,8 @@ module.exports = {
             defaultFormat: "%-H:%M",
             shortFormat: "%-H:%M",
             longFormat: "%-H:%M:%S"
-        }
+        },
+        isRTL: false
     },
     'tr': {
         translations: require('./translations/tr.js'),
@@ -579,7 +599,8 @@ module.exports = {
             defaultFormat: "%-H:%M",
             shortFormat: "%-H:%M",
             longFormat: "%-H:%M:%S"
-        }
+        },
+        isRTL: false
     },
     'vi': {
         translations: require('./translations/vi.js'),
@@ -598,7 +619,8 @@ module.exports = {
             defaultFormat: "%-I:%M %p",
             shortFormat: "%-I:%M %p",
             longFormat: "%-I:%M:%S %p"
-        }
+        },
+        isRTL: false
     },
     'ca': {
         translations: require('./translations/ca.js'),
@@ -617,6 +639,7 @@ module.exports = {
             defaultFormat: "%-H:%M",
             shortFormat: "%-H:%M",
             longFormat: "%-H:%M:%S"
-        }
+        },
+        isRTL: false
     }
 };
