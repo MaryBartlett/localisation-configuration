@@ -27,6 +27,10 @@ describe('en-in language test', function () {
         expect(configuredLocaliser._i18n.pluralization["en-IN"](2)).toEqual(["other"]);
     });
 
+    it('should have correct text direction', function () {
+        expect( config.supportedLanguages[ config.language ].isRTL ).toBeFalse();
+    });
+
     describe('should correctly format', function () {
 
         it('date', function () {
