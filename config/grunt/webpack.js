@@ -1,6 +1,17 @@
 var RewirePlugin = require("rewire-webpack");
 
 module.exports = {
+    options: {
+        module: {
+            loaders: [
+                {
+                    test: /\.json$/,
+                    loader: 'json-loader'
+                }
+            ]
+        }
+    },
+
     app: {
         context: "./src/main",
         entry: "./index.js",
