@@ -1,5 +1,4 @@
 module.exports = {
-    "helloWorld": "some korean string",
     "date": {
         "day_names": ["일요일", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
         "abbr_day_names": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],

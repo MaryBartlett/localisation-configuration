@@ -1,5 +1,4 @@
 module.exports = {
-    "helloWorld": "some dutch string",
     "date": {
         "day_names": ["Zondag", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
         "abbr_day_names": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],

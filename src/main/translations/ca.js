@@ -2,7 +2,6 @@
 // http://download.microsoft.com/download/F/0/6/F06507FB-0BEE-4856-86B3-CB7500C5DC01/cat-esp-StyleGuide.pdf
 
 module.exports = {
-    "helloWorld": "hola World !",
     "date": {
         "day_names": ["diumenge", "dilluns", "dimarts", "dimecres", "dijous", "divendres", "dissabte"],
         "abbr_day_names": ["dg.", "dl.", "dt.", "dc.", "dj.", "dv.", "ds."],
