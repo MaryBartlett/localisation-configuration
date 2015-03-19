@@ -4,7 +4,8 @@ module.exports = {
 	        './Gruntfile.js',
 	        './grunt/**/*.js',
 	        './src/main/**/*.js',
-	        './src/test/**/*.js'
+            './src/test/**/*.js',
+            '!./src/**/*.json'
     	],
     	options: require('web-jscs-options')
     }

@@ -28,6 +28,7 @@
     "i18n-js": "http://github.com/fnando/i18n-js/archive/v3.0.0.rc8.tar.gz",
     "jasmine-expect": "^1.22.2",
     "jscs": "1.7.3",
+    "json-loader": "0.5.1",
     "localisation": "https://github.brislabs.com/web/localisation/archive/v1.0.14.tar.gz",
     "lodash": "2.4.1",
     "request": "^2.45.0",

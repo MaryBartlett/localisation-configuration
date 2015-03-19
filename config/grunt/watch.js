@@ -7,6 +7,7 @@ module.exports = {
         files: [
             './Gruntfile.js',
             'src/**/*.js',
+            'src/**/*.json',
             'grunt/**/*.js'
         ],
         tasks: ['process_js']
