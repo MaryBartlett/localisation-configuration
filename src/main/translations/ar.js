@@ -1,5 +1,4 @@
 module.exports = {
-    "helloWorld": "مرحبا بالعالم!",
     "date": {
         "day_names": ["الأحد،", "الإثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت"],
         "abbr_day_names": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],

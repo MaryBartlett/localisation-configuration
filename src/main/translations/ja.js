@@ -1,5 +1,4 @@
 module.exports = {
-    "helloWorld": "some japanese string",
     "date": {
         "day_names": ["nichi-yōbi", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
         "abbr_day_names": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],

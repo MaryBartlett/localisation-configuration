@@ -1,5 +1,4 @@
 module.exports = {
-    "helloWorld": "some chinese string",
     "date": {
         "day_names": ["星期日", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
         "abbr_day_names": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
