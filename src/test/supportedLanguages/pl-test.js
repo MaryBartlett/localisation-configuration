@@ -58,7 +58,7 @@ describe('pl language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'date', 'default')).toEqual('30 marca 2014');
+            }, 'date', 'default')).toEqual('30 Marzec 2014');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -76,7 +76,7 @@ describe('pl language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'date', 'long')).toEqual('Niedziela, 30 marca 2014');
+            }, 'date', 'long')).toEqual('Niedziela, 30 Marzec 2014');
 
         });
 
@@ -89,7 +89,7 @@ describe('pl language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'default')).toEqual('30 marca 2014 12:30');
+            }, 'dateTime', 'default')).toEqual('30 Marzec 2014 12:30');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -98,7 +98,7 @@ describe('pl language test', function () {
                 hour: 13,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'default')).toEqual('30 marca 2014 13:30');
+            }, 'dateTime', 'default')).toEqual('30 Marzec 2014 13:30');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -116,7 +116,7 @@ describe('pl language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'long')).toEqual('Niedziela, 30 marca 2014 12:30');
+            }, 'dateTime', 'long')).toEqual('Niedziela, 30 Marzec 2014 12:30');
 
         });
 

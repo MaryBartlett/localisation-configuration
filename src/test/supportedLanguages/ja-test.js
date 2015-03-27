@@ -65,7 +65,7 @@ describe('ja language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'date', 'long')).toEqual('2014年3月30日 (nichi-yōbi)');
+            }, 'date', 'long')).toEqual('2014年3月30日 (日曜日)');
 
         });
 
@@ -78,7 +78,7 @@ describe('ja language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'default')).toEqual('2014年3月30日 12:30 gogo');
+            }, 'dateTime', 'default')).toEqual('2014年3月30日 12:30 pm');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -87,7 +87,7 @@ describe('ja language test', function () {
                 hour: 13,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'default')).toEqual('2014年3月30日 1:30 gogo');
+            }, 'dateTime', 'default')).toEqual('2014年3月30日 1:30 pm');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -96,7 +96,7 @@ describe('ja language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'short')).toEqual('03/30/2014 12:30 gogo');
+            }, 'dateTime', 'short')).toEqual('03/30/2014 12:30 pm');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -105,7 +105,7 @@ describe('ja language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'long')).toEqual('2014年3月30日 (nichi-yōbi) 12:30 gogo');
+            }, 'dateTime', 'long')).toEqual('2014年3月30日 (日曜日) 12:30 pm');
 
         });
 
@@ -118,7 +118,7 @@ describe('ja language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'time', 'default')).toEqual('12:30 gogo');
+            }, 'time', 'default')).toEqual('12:30 pm');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -127,7 +127,7 @@ describe('ja language test', function () {
                 hour: 13,
                 minute: 30,
                 second: 0
-            }, 'time', 'default')).toEqual('1:30 gogo');
+            }, 'time', 'default')).toEqual('1:30 pm');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -136,7 +136,7 @@ describe('ja language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'time', 'short')).toEqual('12:30 gogo');
+            }, 'time', 'short')).toEqual('12:30 pm');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -145,7 +145,7 @@ describe('ja language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'time', 'long')).toEqual('12:30:00 gogo');
+            }, 'time', 'long')).toEqual('12:30:00 pm');
         });
     });
 });

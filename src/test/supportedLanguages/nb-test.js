@@ -65,7 +65,7 @@ describe('nb language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'date', 'long')).toEqual('Søndag 30. mars 2014');
+            }, 'date', 'long')).toEqual('søndag 30. mars 2014');
 
         });
 
@@ -105,7 +105,7 @@ describe('nb language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'long')).toEqual('Søndag 30. mars 2014 kl. 12.30');
+            }, 'dateTime', 'long')).toEqual('søndag 30. mars 2014 kl. 12.30');
 
         });
 

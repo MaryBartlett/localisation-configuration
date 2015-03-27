@@ -65,7 +65,7 @@ describe('nl language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'date', 'long')).toEqual('Zondag 30 maart 2014');
+            }, 'date', 'long')).toEqual('zondag 30 maart 2014');
 
         });
 
@@ -105,7 +105,7 @@ describe('nl language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'long')).toEqual('Zondag 30 maart 2014 12:30');
+            }, 'dateTime', 'long')).toEqual('zondag 30 maart 2014 12:30');
 
         });
 

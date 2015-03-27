@@ -65,7 +65,7 @@ describe('sv language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'date', 'long')).toEqual('Söndag den 30 mars 2014');
+            }, 'date', 'long')).toEqual('söndag den 30 mars 2014');
 
         });
 
@@ -105,7 +105,7 @@ describe('sv language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'long')).toEqual('Söndag den 30 mars 2014 12:30');
+            }, 'dateTime', 'long')).toEqual('söndag den 30 mars 2014 12:30');
 
         });
 
