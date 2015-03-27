@@ -1,9 +1,9 @@
-{
+﻿{
     "date": {
-        "day_names": ["Söndag", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "abbr_day_names": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-        "month_names": [null, "January", "February", "mars", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-        "abbr_month_names": [null, "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"],
-        "meridian": ["am", "pm"]
+        "day_names": ["söndag", "måndag", "tisdag", "onsdag", "torsdag", "fredag", "lördag"],
+        "abbr_day_names": ["sön", "mån", "tis", "ons", "tors", "fre", "lör"],
+        "month_names": [null, "januari", "februari", "mars", "april", "maj", "juni", "juli", "augusti", "september", "oktober", "november", "december"],
+        "abbr_month_names": [null, "jan", "feb", "mar", "apr", "maj", "jun", "jul", "aug", "sept", "okt", "nov", "dec"],
+        "meridian": ["fm", "em"]
     }
 }

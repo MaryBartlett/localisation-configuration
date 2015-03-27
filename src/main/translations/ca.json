@@ -1,9 +1,9 @@
-{
+﻿{
     "date": {
-        "day_names": ["diumenge", "dilluns", "dimarts", "dimecres", "dijous", "divendres", "dissabte"],
-        "abbr_day_names": ["dg.", "dl.", "dt.", "dc.", "dj.", "dv.", "ds."],
-        "month_names": [null, "gener", "febrer", "març", "abril", "maig", "juny", "juliol", "agost", "setembre", "octubre", "novembre", "desembre"],
-        "abbr_month_names": [null, "gen", "feb", "març", "abr", "maig", "juny", "jul", "ag", "set", "oct", "nov", "des"],
+        "day_names": ["Diumenge", "Dilluns", "Dimarts", "Dimecres", "Dijous", "Divendres", "Dissabte"],
+        "abbr_day_names": ["Dg.", "Dl.", "Dt.", "Dc.", "Dj.", "Dv.", "Ds."],
+        "month_names": [null, "Gener", "Febrer", "Març", "Abril", "Maig", "Juny", "Juliol", "Agost", "Setembre", "Octubre", "Novembre", "Desembre"],
+        "abbr_month_names": [null, "Gen.", "Febr.", "Març", "Abr.", "Maig", "Juny", "Jul.", "Ag.", "Set.", "Oct.", "Nov.", "Des."],
         "meridian": ["am", "pm"]
     }
 }
