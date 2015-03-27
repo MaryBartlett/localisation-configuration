@@ -21,7 +21,7 @@ var pluralForms = {
 
 module.exports = {
     'default': {
-        translations: require('./translations/en'),
+        translations: require('./translations/en.json'),
         pluralization: pluralForms.singularOneElseOther,
         dateFormat: {
             defaultFormat: "%-d %B %Y",
@@ -41,7 +41,7 @@ module.exports = {
         isRTL: false
     },
     'en': {
-        translations: require('./translations/en'),
+        translations: require('./translations/en.json'),
         pluralization: pluralForms.singularOneElseOther,
         dateFormat: {
             defaultFormat: "%-d %B %Y",
@@ -142,7 +142,7 @@ module.exports = {
         }
     },
     'de': {
-        translations: require('./translations/de'),
+        translations: require('./translations/de.json'),
         pluralization: pluralForms.singularOneElseOther,
         dateFormat: {
             defaultFormat: "%-d. %B %Y",
@@ -169,7 +169,7 @@ module.exports = {
         }
     },
     'pt': {
-        translations: require('./translations/pt'),
+        translations: require('./translations/pt.json'),
         pluralization: pluralForms.singularOneElseOther,
         dateFormat: {
             defaultFormat: "%-d de %B de %Y",
@@ -190,7 +190,7 @@ module.exports = {
 
         territoryOverrides: {
             'br': {
-                translations: require('./translations/pt-br'),
+                translations: require('./translations/pt-br.json'),
                 dateFormat: {
                     shortFormat: "%-d/%m/%Y"
                 },
@@ -201,7 +201,7 @@ module.exports = {
         }
     },
     'fr': {
-        translations: require('./translations/fr'),
+        translations: require('./translations/fr.json'),
         pluralization: pluralForms.singularOneElseOther,
         dateFormat: {
             defaultFormat: "%-d %B %Y",
@@ -226,7 +226,7 @@ module.exports = {
         }
     },
     'zh': {
-        translations: require('./translations/zh'),
+        translations: require('./translations/zh.json'),
         pluralization: pluralForms.other,
         dateFormat: {
             defaultFormat: "%Y年%-m月%-d日",
@@ -249,7 +249,7 @@ module.exports = {
         }
     },
     'fi': {
-        translations: require('./translations/fi'),
+        translations: require('./translations/fi.json'),
         pluralization: pluralForms.singularOneElseOther,
         dateFormat: {
             defaultFormat: "%-d. %B %Y",
@@ -269,7 +269,7 @@ module.exports = {
         isRTL: false
     },
     'id': {
-        translations: require('./translations/id'),
+        translations: require('./translations/id.json'),
         pluralization: pluralForms.other,
         dateFormat: {
             defaultFormat: "%-d %B %Y",
@@ -289,7 +289,7 @@ module.exports = {
         isRTL: false
     },
     'it': {
-        translations: require('./translations/it'),
+        translations: require('./translations/it.json'),
         pluralization: pluralForms.singularOneElseOther,
         dateFormat: {
             defaultFormat: "%-d %B %Y",
@@ -309,7 +309,7 @@ module.exports = {
         isRTL: false
     },
     'ja': {
-        translations: require('./translations/ja'),
+        translations: require('./translations/ja.json'),
         pluralization: pluralForms.other,
         dateFormat: {
             defaultFormat: "%Y年%-m月%-d日",
@@ -329,7 +329,7 @@ module.exports = {
         isRTL: false
     },
     'ko': {
-        translations: require('./translations/ko'),
+        translations: require('./translations/ko.json'),
         pluralization: pluralForms.other,
         dateFormat: {
             defaultFormat: "%Y년 %-m월 %-d일",
@@ -349,7 +349,7 @@ module.exports = {
         isRTL: false
     },
     'ms': {
-        translations: require('./translations/ms'),
+        translations: require('./translations/ms.json'),
         pluralization: pluralForms.other,
         dateFormat: {
             defaultFormat: "%-d %B %Y",
@@ -369,7 +369,7 @@ module.exports = {
         isRTL: false
     },
     'nl': {
-        translations: require('./translations/nl'),
+        translations: require('./translations/nl.json'),
         pluralization: pluralForms.singularOneElseOther,
         dateFormat: {
             defaultFormat: "%-d %B %Y",
@@ -389,7 +389,7 @@ module.exports = {
         isRTL: false
     },
     'pl': {
-        translations: require('./translations/pl'),
+        translations: require('./translations/pl.json'),
         pluralization: function (count) {
             var key = false;
             if (count === 1) {
@@ -421,7 +421,7 @@ module.exports = {
         isRTL: false
     },
     'es': {
-        translations: require('./translations/es'),
+        translations: require('./translations/es.json'),
         pluralization: pluralForms.singularOneElseOther,
         dateFormat: {
             defaultFormat: "%-d de %B de %Y",
@@ -441,7 +441,7 @@ module.exports = {
         isRTL: false,
         territoryOverrides: {
             'mx': {
-                translations: require('./translations/es-mx'),
+                translations: require('./translations/es-mx.json'),
                 dateFormat: {
                     defaultFormat: "%-d de %B %Y",
                     longFormat: "%A %-d de %B del %Y"
@@ -455,7 +455,7 @@ module.exports = {
         }
     },
     'nb': {
-        translations: require('./translations/nb'),
+        translations: require('./translations/nb.json'),
         pluralization: pluralForms.singularOneElseOther,
         dateFormat: {
             defaultFormat: "%-d. %B %Y",
@@ -475,7 +475,7 @@ module.exports = {
         isRTL: false
     },
     'ru': {
-        translations: require('./translations/ru'),
+        translations: require('./translations/ru.json'),
         pluralization: function (count) {
             var key = false;
             if (count % 10 === 1 && count % 100 !== 11) {
@@ -507,7 +507,7 @@ module.exports = {
         isRTL: false
     },
     'ar': {
-        translations: require('./translations/ar'),
+        translations: require('./translations/ar.json'),
         pluralization: function (count) {
             var key = false;
             if (count === 0) {
@@ -543,7 +543,7 @@ module.exports = {
         isRTL: true
     },
     'sv': {
-        translations: require('./translations/sv'),
+        translations: require('./translations/sv.json'),
         pluralization: pluralForms.singularOneElseOther,
         dateFormat: {
             defaultFormat: "%-d %B %Y",
@@ -563,7 +563,7 @@ module.exports = {
         isRTL: false
     },
     'th': {
-        translations: require('./translations/th'),
+        translations: require('./translations/th.json'),
         pluralization: pluralForms.other,
         dateFormat: {
             defaultFormat: "%-d %B %Y",
@@ -583,7 +583,7 @@ module.exports = {
         isRTL: false
     },
     'tr': {
-        translations: require('./translations/tr'),
+        translations: require('./translations/tr.json'),
         pluralization: pluralForms.other,
         dateFormat: {
             defaultFormat: "%-d %B %Y",
@@ -603,7 +603,7 @@ module.exports = {
         isRTL: false
     },
     'vi': {
-        translations: require('./translations/vi'),
+        translations: require('./translations/vi.json'),
         pluralization: pluralForms.other,
         dateFormat: {
             defaultFormat: "%-d %B %Y",
@@ -623,7 +623,7 @@ module.exports = {
         isRTL: false
     },
     'ca': {
-        translations: require('./translations/ca'),
+        translations: require('./translations/ca.json'),
         pluralization: pluralForms.singularOneElseOther,
         dateFormat: {
             defaultFormat: "%-d de %B de %Y",
