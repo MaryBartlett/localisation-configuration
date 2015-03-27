@@ -59,7 +59,7 @@ describe('ar language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'date', 'default')).toEqual('30 مارس، 2014');
+            }, 'date', 'default')).toEqual('30 مارس 2014');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -77,7 +77,7 @@ describe('ar language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'date', 'long')).toEqual('الأحد، 30 مارس، 2014');
+            }, 'date', 'long')).toEqual('الأحد 30 مارس 2014');
 
         });
 
@@ -90,7 +90,7 @@ describe('ar language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'default')).toEqual('30 مارس، 2014 12:30 م');
+            }, 'dateTime', 'default')).toEqual('30 مارس 2014 12:30 مساءً');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -99,7 +99,7 @@ describe('ar language test', function () {
                 hour: 13,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'default')).toEqual('30 مارس، 2014 1:30 م');
+            }, 'dateTime', 'default')).toEqual('30 مارس 2014 1:30 مساءً');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -108,7 +108,7 @@ describe('ar language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'short')).toEqual('30/03/2014 12:30 م');
+            }, 'dateTime', 'short')).toEqual('30/03/2014 12:30 مساءً');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -117,7 +117,7 @@ describe('ar language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'long')).toEqual('الأحد، 30 مارس، 2014 12:30 م');
+            }, 'dateTime', 'long')).toEqual('الأحد 30 مارس 2014 12:30 مساءً');
 
         });
 
@@ -130,7 +130,7 @@ describe('ar language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'time', 'default')).toEqual('12:30 م');
+            }, 'time', 'default')).toEqual('12:30 مساءً');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -139,7 +139,7 @@ describe('ar language test', function () {
                 hour: 13,
                 minute: 30,
                 second: 0
-            }, 'time', 'default')).toEqual('1:30 م');
+            }, 'time', 'default')).toEqual('1:30 مساءً');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -148,7 +148,7 @@ describe('ar language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'time', 'short')).toEqual('12:30 م');
+            }, 'time', 'short')).toEqual('12:30 مساءً');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -157,7 +157,7 @@ describe('ar language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'time', 'long')).toEqual('12:30:00 م');
+            }, 'time', 'long')).toEqual('12:30:00 مساءً');
         });
 
     });

@@ -1,9 +1,9 @@
-{
+﻿{
     "date": {
-        "day_names": ["Ahad", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "abbr_day_names": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-        "month_names": [null, "January", "February", "Mac", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-        "abbr_month_names": [null, "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"],
+        "day_names": ["Ahad", "Isnin", "Selasa", "Rabu", "Khamis", "Jumaat", "Sabtu"],
+        "abbr_day_names": ["Aha", "Isn", "Sel", "Rab", "Kha", "Jum", "Sab"],
+        "month_names": [null, "Januari", "Februari", "Mac", "April", "Mei", "Jun", "Julai", "Ogos", "September", "Oktober", "November", "Disember"],
+        "abbr_month_names": [null, "Jan", "Feb", "Mac", "Apr", "Mei", "Jun", "Jul", "Ogo", "Sept", "Okt", "Nov", "Dis"],
         "meridian": ["am", "pm"]
     }
 }

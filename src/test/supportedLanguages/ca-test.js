@@ -47,7 +47,7 @@ describe('ca language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'date', 'default')).toEqual('30 de març de 2014');
+            }, 'date', 'default')).toEqual('30 de Març de 2014');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -65,7 +65,7 @@ describe('ca language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'date', 'long')).toEqual('diumenge 30 de març de 2014');
+            }, 'date', 'long')).toEqual('Diumenge 30 de Març de 2014');
         });
 
         it('dateTime', function () {
@@ -77,7 +77,7 @@ describe('ca language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'default')).toEqual('diumenge 30 de març de 2014 a les 12:30');
+            }, 'dateTime', 'default')).toEqual('Diumenge 30 de Març de 2014 a les 12:30');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -86,7 +86,7 @@ describe('ca language test', function () {
                 hour: 13,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'default')).toEqual('diumenge 30 de març de 2014 a les 13:30');
+            }, 'dateTime', 'default')).toEqual('Diumenge 30 de Març de 2014 a les 13:30');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -104,7 +104,7 @@ describe('ca language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'long')).toEqual('diumenge 30 de març de 2014 a les 12:30');
+            }, 'dateTime', 'long')).toEqual('Diumenge 30 de Març de 2014 a les 12:30');
         });
 
         it('time', function () {

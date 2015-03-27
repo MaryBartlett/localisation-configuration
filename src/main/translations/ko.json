@@ -1,9 +1,9 @@
-{
+﻿{
     "date": {
-        "day_names": ["일요일", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "abbr_day_names": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-        "month_names": [null, "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-        "abbr_month_names": [null, "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"],
-        "meridian": ["am", "오후"]
+        "day_names": ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"],
+        "abbr_day_names": ["일", "월", "화", "수", "목", "금", "토"],
+        "month_names": [null, "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+        "abbr_month_names": [null, "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+        "meridian": ["am", "pm"]
     }
 }

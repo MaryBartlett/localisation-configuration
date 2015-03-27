@@ -47,7 +47,7 @@ describe('vi-vn language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'date', 'default')).toEqual('30 March 2014');
+            }, 'date', 'default')).toEqual('30 Tháng 3 2014');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -65,7 +65,7 @@ describe('vi-vn language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'date', 'long')).toEqual('Sunday 30 March 2014');
+            }, 'date', 'long')).toEqual('Chủ Nhật 30 Tháng 3 2014');
 
         });
 
@@ -78,7 +78,7 @@ describe('vi-vn language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'default')).toEqual('30 March 2014 12:30 pm');
+            }, 'dateTime', 'default')).toEqual('30 Tháng 3 2014 12:30 th');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -87,7 +87,7 @@ describe('vi-vn language test', function () {
                 hour: 13,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'default')).toEqual('30 March 2014 1:30 pm');
+            }, 'dateTime', 'default')).toEqual('30 Tháng 3 2014 1:30 th');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -96,7 +96,7 @@ describe('vi-vn language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'short')).toEqual('30/03/2014 12:30 pm');
+            }, 'dateTime', 'short')).toEqual('30/03/2014 12:30 th');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -105,7 +105,7 @@ describe('vi-vn language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'long')).toEqual('Sunday 30 March 2014 12:30 pm');
+            }, 'dateTime', 'long')).toEqual('Chủ Nhật 30 Tháng 3 2014 12:30 th');
 
         });
 
@@ -118,7 +118,7 @@ describe('vi-vn language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'time', 'default')).toEqual('12:30 pm');
+            }, 'time', 'default')).toEqual('12:30 th');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -127,7 +127,7 @@ describe('vi-vn language test', function () {
                 hour: 13,
                 minute: 30,
                 second: 0
-            }, 'time', 'default')).toEqual('1:30 pm');
+            }, 'time', 'default')).toEqual('1:30 th');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -136,7 +136,7 @@ describe('vi-vn language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'time', 'short')).toEqual('12:30 pm');
+            }, 'time', 'short')).toEqual('12:30 th');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -145,7 +145,7 @@ describe('vi-vn language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'time', 'long')).toEqual('12:30:00 pm');
+            }, 'time', 'long')).toEqual('12:30:00 th');
         });
     });
 });

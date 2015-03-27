@@ -1,9 +1,9 @@
-{
+﻿{
     "date": {
-        "day_names": ["Sunnuntai", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "abbr_day_names": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-        "month_names": [null, "January", "February", "maaliskuuta", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-        "abbr_month_names": [null, "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"],
-        "meridian": ["am", "pm"]
+        "day_names": ["sunnuntai", "maanantai", "tiistai", "keskiviikko", "torstai", "perjantai", "lauantai"],
+        "abbr_day_names": ["su", "ma", "ti", "ke", "to", "pe", "la"],
+        "month_names": [null, "tammikuu", "helmikuu", "maaliskuu", "huhtikuu", "toukokuu", "kesäkuu", "heinäkuu", "elokuu", "syyskuu", "lokakuu", "marraskuu", "joulukuu"],
+        "abbr_month_names": [null, "tammi", "helmi", "maalis", "huhti", "touko", "kesä", "heinä", "elo", "syys", "loka", "marras", "joulu"],
+        "meridian": ["ap.", "ip."]
     }
 }

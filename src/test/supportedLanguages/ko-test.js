@@ -78,7 +78,7 @@ describe('ko language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'default')).toEqual('2014년 3월 30일 오후 12:30');
+            }, 'dateTime', 'default')).toEqual('2014년 3월 30일 pm 12:30');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -87,7 +87,7 @@ describe('ko language test', function () {
                 hour: 13,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'default')).toEqual('2014년 3월 30일 오후 1:30');
+            }, 'dateTime', 'default')).toEqual('2014년 3월 30일 pm 1:30');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -96,7 +96,7 @@ describe('ko language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'short')).toEqual('2014.03.30 오후 12:30');
+            }, 'dateTime', 'short')).toEqual('2014.03.30 pm 12:30');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -105,7 +105,7 @@ describe('ko language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'dateTime', 'long')).toEqual('2014년 3월 30일 일요일 오후 12시 30분');
+            }, 'dateTime', 'long')).toEqual('2014년 3월 30일 일요일 pm 12시 30분');
 
         });
 
@@ -118,7 +118,7 @@ describe('ko language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'time', 'default')).toEqual('오후 12:30');
+            }, 'time', 'default')).toEqual('pm 12:30');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -127,7 +127,7 @@ describe('ko language test', function () {
                 hour: 13,
                 minute: 30,
                 second: 0
-            }, 'time', 'default')).toEqual('오후 1:30');
+            }, 'time', 'default')).toEqual('pm 1:30');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -136,7 +136,7 @@ describe('ko language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'time', 'short')).toEqual('오후 12:30');
+            }, 'time', 'short')).toEqual('pm 12:30');
 
             expect(configuredLocaliser.formatDateTime({
                 year: 2014,
@@ -145,7 +145,7 @@ describe('ko language test', function () {
                 hour: 12,
                 minute: 30,
                 second: 0
-            }, 'time', 'long')).toEqual('오후 12:30:00');
+            }, 'time', 'long')).toEqual('pm 12:30:00');
         });
     });
 });

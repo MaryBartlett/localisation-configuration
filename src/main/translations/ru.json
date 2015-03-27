@@ -1,9 +1,9 @@
-{
+﻿{
     "date": {
-        "day_names": ["воскресенье", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "abbr_day_names": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-        "month_names": [null, "January", "February", "марта", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-        "abbr_month_names": [null, "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"],
-        "meridian": ["am", "pm"]
+        "day_names": ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"],
+        "abbr_day_names": ["вс", "пн", "вт", "ср", "чт", "пт", "сб"],
+        "month_names": [null, "января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"],
+        "abbr_month_names": [null, "янв", "фев", "мар", "апр", "май", "июн", "июл", "авг", "сен", "окт", "ноя", "дек"],
+        "meridian": ["AM", "PM"]
     }
 }
