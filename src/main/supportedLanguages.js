@@ -221,7 +221,7 @@ module.exports = {
         isRTL: false,
         territoryOverrides: {
             'ca': {
-                translations: require('./translations/fr-ca')
+                translations: require('./translations/fr-ca.json')
             }
         }
     },
