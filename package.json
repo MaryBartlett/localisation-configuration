@@ -25,15 +25,15 @@
     "grunt-jscs": "0.8.1",
     "grunt-jsdoc": "0.5.7",
     "grunt-webpack": "1.0.8",
-    "i18n-js": "http://github.com/fnando/i18n-js/archive/v3.0.0.rc8.tar.gz",
-    "jasmine-expect": "^1.22.2",
+    "i18n-js": "git+ssh://git@github.com:fnando/i18n-js#v3.0.0.rc8",
+    "jasmine-expect": "1.22.2",
     "jscs": "1.7.3",
     "json-loader": "0.5.1",
-    "localisation": "https://github.brislabs.com/web/localisation/archive/v1.0.14.tar.gz",
+    "localisation": "git+ssh://git@github.brislabs.com:web/localisation#v1.0.17",
     "lodash": "2.4.1",
     "request": "^2.45.0",
     "rewire-webpack": "0.2.0",
-    "web-jscs-options": "https://github.brislabs.com/web/jscs-options/archive/v1.0.4.tar.gz",
+    "web-jscs-options": "git+ssh://git@github.brislabs.com:web/jscs-options#v1.0.4",
     "webpack": "1.4.3"
   }
 }
