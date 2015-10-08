@@ -5,5 +5,23 @@
         "month_names": [null, "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
         "abbr_month_names": [null, "Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"],
         "meridian": ["AM", "PM"]
+    },
+    "duration": {
+        "day": {
+            "one": "[PT-BR] day",
+            "other": "[PT-BR] {{count}} days"
+        },
+        "week": {
+            "one": "[PT-BR] week",
+            "other": "[PT-BR] {{count}} weeks"
+        },
+        "month": {
+            "one": "[PT-BR] month",
+            "other": "[PT-BR] {{count}} months"
+        },
+        "year": {
+            "one": "[PT-BR] year",
+            "other": "[PT-BR] {{count}} years"
+        }
     }
 }

@@ -5,5 +5,23 @@
         "month_names": [null, "Gener", "Febrer", "Març", "Abril", "Maig", "Juny", "Juliol", "Agost", "Setembre", "Octubre", "Novembre", "Desembre"],
         "abbr_month_names": [null, "Gen.", "Febr.", "Març", "Abr.", "Maig", "Juny", "Jul.", "Ag.", "Set.", "Oct.", "Nov.", "Des."],
         "meridian": ["am", "pm"]
+    },
+    "duration": {
+        "day": {
+            "one": "[CA] day",
+            "other": "[CA] {{count}} days"
+        },
+        "week": {
+            "one": "[CA] week",
+            "other": "[CA] {{count}} weeks"
+        },
+        "month": {
+            "one": "[CA] month",
+            "other": "[CA] {{count}} months"
+        },
+        "year": {
+            "one": "[CA] year",
+            "other": "[CA] {{count}} years"
+        }
     }
 }
