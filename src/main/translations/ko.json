@@ -5,5 +5,23 @@
         "month_names": [null, "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
         "abbr_month_names": [null, "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
         "meridian": ["am", "pm"]
+    },
+    "duration": {
+        "day": {
+            "one": "[KO] day",
+            "other": "[KO] {{count}} days"
+        },
+        "week": {
+            "one": "[KO] week",
+            "other": "[KO] {{count}} weeks"
+        },
+        "month": {
+            "one": "[KO] month",
+            "other": "[KO] {{count}} months"
+        },
+        "year": {
+            "one": "[KO] year",
+            "other": "[KO] {{count}} years"
+        }
     }
 }

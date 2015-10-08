@@ -5,5 +5,23 @@
         "month_names": [null, "يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"],
         "abbr_month_names": [null, "يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"],
         "meridian": ["صباحًا", "مساءً"]
+    },
+    "duration": {
+        "day": {
+            "one": "[AR] day",
+            "other": "[AR] {{count}} days"
+        },
+        "week": {
+            "one": "[AR] week",
+            "other": "[AR] {{count}} weeks"
+        },
+        "month": {
+            "one": "[AR] month",
+            "other": "[AR] {{count}} months"
+        },
+        "year": {
+            "one": "[AR] year",
+            "other": "[AR] {{count}} years"
+        }
     }
 }

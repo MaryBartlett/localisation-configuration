@@ -5,5 +5,23 @@
         "month_names": [null, "января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"],
         "abbr_month_names": [null, "янв", "фев", "мар", "апр", "май", "июн", "июл", "авг", "сен", "окт", "ноя", "дек"],
         "meridian": ["AM", "PM"]
+    },
+    "duration": {
+        "day": {
+            "one": "[RU] day",
+            "other": "[RU] {{count}} days"
+        },
+        "week": {
+            "one": "[RU] week",
+            "other": "[RU] {{count}} weeks"
+        },
+        "month": {
+            "one": "[RU] month",
+            "other": "[RU] {{count}} months"
+        },
+        "year": {
+            "one": "[RU] year",
+            "other": "[RU] {{count}} years"
+        }
     }
 }

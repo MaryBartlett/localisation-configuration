@@ -5,5 +5,23 @@
         "month_names": [null, "一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
         "abbr_month_names": [null, "一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
         "meridian": ["上午", "下午"]
+    },
+    "duration": {
+        "day": {
+            "one": "[ZH] day",
+            "other": "[ZH] {{count}} days"
+        },
+        "week": {
+            "one": "[ZH] week",
+            "other": "[ZH] {{count}} weeks"
+        },
+        "month": {
+            "one": "[ZH] month",
+            "other": "[ZH] {{count}} months"
+        },
+        "year": {
+            "one": "[ZH] year",
+            "other": "[ZH] {{count}} years"
+        }
     }
 }

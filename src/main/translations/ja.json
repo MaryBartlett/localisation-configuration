@@ -5,5 +5,23 @@
         "month_names": [null, "1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
         "abbr_month_names": [null, "1月", "2月", "3月", "4月", "5月" , "6月", "7月", "8月" , "9月", "10月", "11月", "12月"],
         "meridian": ["am", "pm"]
+    },
+    "duration": {
+        "day": {
+            "one": "[JA] day",
+            "other": "[JA] {{count}} days"
+        },
+        "week": {
+            "one": "[JA] week",
+            "other": "[JA] {{count}} weeks"
+        },
+        "month": {
+            "one": "[JA] month",
+            "other": "[JA] {{count}} months"
+        },
+        "year": {
+            "one": "[JA] year",
+            "other": "[JA] {{count}} years"
+        }
     }
 }

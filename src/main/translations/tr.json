@@ -5,5 +5,23 @@
         "month_names": [null, "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"],
         "abbr_month_names": [null, "Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki", "Kas", "Ara"],
         "meridian": ["öö", "ös"]
+    },
+    "duration": {
+        "day": {
+            "one": "[TR] day",
+            "other": "[TR] {{count}} days"
+        },
+        "week": {
+            "one": "[TR] week",
+            "other": "[TR] {{count}} weeks"
+        },
+        "month": {
+            "one": "[TR] month",
+            "other": "[TR] {{count}} months"
+        },
+        "year": {
+            "one": "[TR] year",
+            "other": "[TR] {{count}} years"
+        }
     }
 }

@@ -5,5 +5,23 @@
         "month_names": [null, "มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน", "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม"],
         "abbr_month_names": [null, "ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค.", "มิ.ย.", "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย.", "ธ.ค."],
         "meridian": ["am", "pm"]
+    },
+    "duration": {
+        "day": {
+            "one": "[TH] day",
+            "other": "[TH] {{count}} days"
+        },
+        "week": {
+            "one": "[TH] week",
+            "other": "[TH] {{count}} weeks"
+        },
+        "month": {
+            "one": "[TH] month",
+            "other": "[TH] {{count}} months"
+        },
+        "year": {
+            "one": "[TH] year",
+            "other": "[TH] {{count}} years"
+        }
     }
 }

@@ -5,5 +5,23 @@
         "month_names": [null, "Styczeń", "Luty", "Marzec", "Kwiecień", "Maj", "Czerwiec", "Lipiec", "Sierpień", "Wrzesień", "Październik", "Listopad", "Grudzień"],
         "abbr_month_names": [null, "Sty", "Lut", "Mar", "Kwi", "Maj", "Cze", "Lip", "Sie", "Wrz", "Paź", "Lis", "Gru"],
         "meridian": ["am", "pm"]
+    },
+    "duration": {
+        "day": {
+            "one": "[PL] day",
+            "other": "[PL] {{count}} days"
+        },
+        "week": {
+            "one": "[PL] week",
+            "other": "[PL] {{count}} weeks"
+        },
+        "month": {
+            "one": "[PL] month",
+            "other": "[PL] {{count}} months"
+        },
+        "year": {
+            "one": "[PL] year",
+            "other": "[PL] {{count}} years"
+        }
     }
 }

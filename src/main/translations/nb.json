@@ -5,5 +5,23 @@
         "month_names": [null, "januar", "februar", "mars", "april", "mai", "juni", "juli", "august", "september", "oktober", "november", "desember"],
         "abbr_month_names": [null, "jan", "feb", "mar", "apr", "mai", "jun", "jul", "aug", "sept", "okt", "nov", "des"],
         "meridian": ["am", "pm"]
+    },
+    "duration": {
+        "day": {
+            "one": "[NB] day",
+            "other": "[NB] {{count}} days"
+        },
+        "week": {
+            "one": "[NB] week",
+            "other": "[NB] {{count}} weeks"
+        },
+        "month": {
+            "one": "[NB] month",
+            "other": "[NB] {{count}} months"
+        },
+        "year": {
+            "one": "[NB] year",
+            "other": "[NB] {{count}} years"
+        }
     }
 }
