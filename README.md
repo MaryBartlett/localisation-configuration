@@ -1,13 +1,13 @@
 #Localisation configuration [![!Build Status](http://btdevapsrvjenkins05.brislabs.com:8080/job/localisation-configuration-CI/badge/icon)](http://btdevapsrvjenkins05.brislabs.com:8080/job/localisation-configuration-CI/)
 
-The configuration objects required for <a href="https://github.brislabs.com/web/localisation">localisation<a/>
+The configuration objects required for <a href="https://github.com/MaryBartlett/localisation">localisation<a/>
 
 ## Install with NPM
 
 Add the following line to package.json using the required release version
 
 ```js
-"localisation-configuration": "https://github.brislabs.com/web/localisation-configuration/archive/v0.3.0.tar.gz"
+"localisation-configuration": "https://github.com/MaryBartlett/localisation-configuration/archive/v0.3.0.tar.gz"
 ```
 
 Returns an object containing supportedTerritories and supportedLanguages objects.
@@ -35,7 +35,8 @@ The supportedLanguages[language] object contains the language specific informati
  - any territory overrides
 
 
-A page of the output of the configurations can be found <a href="https://github.brislabs.com/pages/web/localisation-configuration/">here</a>
+// This isn't working yet
+// A page of the output of the configurations can be found <a href="https://github.com/pages/MaryBartlett/localisation-configuration/">here</a>
 
 
 ## Grunt
