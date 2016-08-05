@@ -1,5 +1,7 @@
 #Localisation configuration
 
+## Please note - this does not build at present as the package.json still references things we used to used at MixRadio that are required.
+
 The configuration objects required for <a href="https://github.com/MaryBartlett/localisation">localisation<a/>
 
 ## Install with NPM
