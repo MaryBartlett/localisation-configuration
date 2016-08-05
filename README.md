@@ -1,4 +1,4 @@
-#Localisation configuration [![!Build Status](http://btdevapsrvjenkins05.brislabs.com:8080/job/localisation-configuration-CI/badge/icon)](http://btdevapsrvjenkins05.brislabs.com:8080/job/localisation-configuration-CI/)
+#Localisation configuration
 
 The configuration objects required for <a href="https://github.com/MaryBartlett/localisation">localisation<a/>
 

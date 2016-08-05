@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.brislabs.com/web/localisation-configuration.git"
+    "url": "http://github.com/MaryBartlett/localisation-configuration.git"
   },
   "author": "",
   "licenses": [
@@ -29,11 +29,11 @@
     "jasmine-expect": "1.22.2",
     "jscs": "1.7.3",
     "json-loader": "0.5.1",
-    "localisation": "git+ssh://git@github.brislabs.com:web/localisation#v1.0.17",
+    "localisation": "git+ssh://git@github.com:MaryBartlett/localisation#v1.0.17",
     "lodash": "2.4.1",
     "request": "^2.45.0",
     "rewire-webpack": "0.2.0",
-    "web-jscs-options": "git+ssh://git@github.brislabs.com:web/jscs-options#v1.0.4",
+    "web-jscs-options": "git+ssh://git@github.com:MaryBartlett/jscs-options#v1.0.4",
     "webpack": "1.4.3"
   }
 }
