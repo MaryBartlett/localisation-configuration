@@ -35,9 +35,9 @@ The supportedLanguages[language] object contains the language specific informati
  - any territory overrides
 
 
-// This isn't working yet
-// A page of the output of the configurations can be found <a href="https://github.com/pages/MaryBartlett/localisation-configuration/">here</a>
-
+<!---This isn't working yet
+ A page of the output of the configurations can be found <a href="https://github.com/pages/MaryBartlett/localisation-configuration/">here</a>
+-->
 
 ## Grunt
 
